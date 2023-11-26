@@ -43,7 +43,7 @@ const socials: SocialsType = [
 
 function NavBar() {
   return (
-    <nav className="flex justify-between h-[64px] items-center px-4 bg-transparent">
+    <nav className="flex justify-between h-[64px] items-center px-4 bg-transparent animate-fade-down animate-duration-[2000ms]">
       <h2>ronnie kaito imagawa.</h2>
       <ul className="md:flex hidden gap-16">
         {links.map((link) => (
