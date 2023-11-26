@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import Kanji from "./components/Kanji";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
@@ -20,7 +21,10 @@ export default function Home() {
           </section>
 
           <div className="col-start-3 col-span-2 row-start-3">
-            <h1 className="text-5xl text-right">full stack web developer.</h1>
+            <TypeAnimation
+              sequence={["full stack web developer."]}
+              className="text-5xl text-right"
+            />
           </div>
         </section>
       </main>
