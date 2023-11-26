@@ -1,9 +1,9 @@
+import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import { SocialIcon } from "react-social-icons/component";
+import "react-social-icons/github";
 import "react-social-icons/linkedin";
 import "react-social-icons/x";
-import "react-social-icons/github";
-import { LucideMenu, Menu, MenuIcon, MenuSquare } from "lucide-react";
 
 type LinksType = { label: string; href: string }[];
 
