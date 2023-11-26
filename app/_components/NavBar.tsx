@@ -3,6 +3,7 @@ import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/linkedin";
 import "react-social-icons/x";
 import "react-social-icons/github";
+import { LucideMenu, Menu, MenuIcon, MenuSquare } from "lucide-react";
 
 type LinksType = { label: string; href: string }[];
 
@@ -13,16 +14,20 @@ type SocialsType = {
 
 const links: LinksType = [
   {
+    label: "home",
+    href: "/",
+  },
+  {
     label: "meet ronnie kaito",
-    href: "#",
+    href: "/ronniekaito",
   },
   {
     label: "projects",
-    href: "#",
+    href: "/projects",
   },
   {
     label: "contact",
-    href: "#",
+    href: "/contact",
   },
 ];
 
@@ -44,16 +49,23 @@ const socials: SocialsType = [
 function NavBar() {
   return (
     <nav className="flex justify-between h-[64px] items-center px-4 bg-transparent animate-fade-down animate-duration-[2000ms]">
-      <h2>ronnie kaito imagawa.</h2>
+      <Link href="/">
+        <h2 className="hover:scale-[1.02]">ronnie kaito imagawa.</h2>
+      </Link>
+
+      {/* MOBILE MENU */}
+      <MenuIcon className="md:hidden" />
+
+      {/* NAV LINKS */}
       <ul className="md:flex hidden gap-16">
         {links.map((link) => (
-          <li key={link.label}>
-            <Link className="hover:underline hover:scale-110" href={link.href}>
-              {link.label}
-            </Link>
+          <li key={link.label} className=" hover:scale-[1.02]">
+            <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
       </ul>
+
+      {/* SOCIAL MEDIA LINKS */}
       <ul className="md:flex hidden gap-2">
         {socials.map((social) => (
           <li key={social.url}>
