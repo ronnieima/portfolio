@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 
 function Footer() {
   return (
-    <footer className=" animate-duration-[2000ms] grid grid-cols-3 grid-rows-2 px-8 animate-fade-up ">
+    <footer className=" animate-duration-[2000ms] sm:grid grid-cols-3 grid-rows-2 px-8 animate-fade-up mt-auto pb-8  ">
       <p className="col-start-1 row-start-2 text-sm text-neutral-400">
         Coded in{" "}
         <HoverableLink url="https://code.visualstudio.com/">

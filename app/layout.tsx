@@ -4,6 +4,7 @@ import NavBar from "./_components/NavBar";
 import { Providers } from "./_components/Providers";
 import "./globals.css";
 import Script from "next/script";
+import Footer from "./_components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,10 +28,13 @@ export default function RootLayout({
           data-website-id="2191e900-8f64-48a8-ad5d-f66a95d7933d"
         ></Script>
       </head>
-      <body className={`bg-[#121212] min-h-[100svh] ${inter.className}`}>
+      <body
+        className={`bg-[#121212] min-h-screen flex flex-col ${inter.className}`}
+      >
         <Providers>
           <NavBar />
-          <main>{children}</main>
+          {children}
+          <Footer />
         </Providers>
       </body>
     </html>
