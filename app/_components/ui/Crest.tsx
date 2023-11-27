@@ -1,11 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import imagawaCrest from "@/public/imagawa.png";
 
 function Crest() {
   return (
     <Image
-      className="col-start-4"
+      className="col-start-4 hover:scale-110"
       src="/imagawa.png"
       width={30}
       height={30}
