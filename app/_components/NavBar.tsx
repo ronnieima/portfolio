@@ -7,6 +7,7 @@ import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/github";
 import "react-social-icons/linkedin";
 import "react-social-icons/x";
+import Crest from "./ui/Crest";
 
 type LinksType = { label: string; href: string }[];
 
@@ -54,9 +55,12 @@ function NavBar() {
   console.log(currentPath);
   return (
     <nav className="flex justify-between h-[64px] items-center px-4 bg-transparent animate-fade-down animate-duration-[2000ms]">
-      <Link href="/">
-        <h2 className="hover:scale-[1.02]">ronnie kaito imagawa.</h2>
-      </Link>
+      <div className="flex gap-4 items-center">
+        <Crest />
+        <Link href="/">
+          <h2 className="hover:scale-[1.02]">ronnie kaito imagawa.</h2>
+        </Link>
+      </div>
 
       {/* MOBILE MENU */}
       <MenuIcon className="md:hidden" />
