@@ -1,5 +1,8 @@
+"use client";
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/github";
 import "react-social-icons/linkedin";
@@ -47,6 +50,8 @@ const socials: SocialsType = [
 ];
 
 function NavBar() {
+  const currentPath = usePathname();
+  console.log(currentPath);
   return (
     <nav className="flex justify-between h-[64px] items-center px-4 bg-transparent animate-fade-down animate-duration-[2000ms]">
       <Link href="/">
@@ -59,7 +64,12 @@ function NavBar() {
       {/* NAV LINKS */}
       <ul className="md:flex hidden gap-16">
         {links.map((link) => (
-          <li key={link.label} className=" hover:scale-[1.02]">
+          <li
+            key={link.label}
+            className={`${
+              currentPath === link.href && "underline"
+            } hover:scale-[1.02] `}
+          >
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
