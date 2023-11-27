@@ -63,10 +63,10 @@ function NavBar() {
       </div>
 
       {/* MOBILE MENU */}
-      <MenuIcon className="md:hidden" />
+      <MenuIcon className="lg:hidden" />
 
       {/* NAV LINKS */}
-      <ul className="md:flex hidden gap-16">
+      <ul className="lg:flex hidden gap-16">
         {links.map((link) => (
           <li
             key={link.label}
@@ -80,7 +80,7 @@ function NavBar() {
       </ul>
 
       {/* SOCIAL MEDIA LINKS */}
-      <ul className="md:flex hidden gap-2">
+      <ul className="lg:flex hidden gap-2">
         {socials.map((social) => (
           <li key={social.url}>
             <Link href={social.url} target="_blank">
