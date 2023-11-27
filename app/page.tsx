@@ -5,11 +5,8 @@ import { PropsWithChildren, ReactNode } from "react";
 
 export default function Home() {
   return (
-    <>
-      <main>
-        <Hero />
-      </main>
-      <Footer />
-    </>
+    <main className="h-full">
+      <Hero />
+    </main>
   );
 }
