@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import NavBar from "./_components/NavBar";
 import { Providers } from "./_components/Providers";
 import "./globals.css";
 import Script from "next/script";
 import Footer from "./_components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Ronnie Kaito Imagawa | Portfolio",
