@@ -24,7 +24,8 @@ const links: LinkType[] = [
   },
 ];
 
-const mobileStyles = 'hover:bg-slate-600 rounded-lg text-center text-xl';
+const mobileStyles =
+  'hover:bg-slate-600 rounded-lg text-center text-xl lg:text-4xl px-6 py-2';
 
 const desktopStyles = 'hover:text-slate-400';
 
@@ -33,16 +34,15 @@ function NavLinks({ mobile }: { mobile?: boolean }) {
   return (
     <>
       {links.map((link) => (
-        <li key={link.label} className="">
-          <Link
-            href={link.href}
-            className={`inline-block ${
-              currentPath === link.href && 'underline underline-offset-2'
-            } ${mobile ? mobileStyles : desktopStyles}`}
-          >
-            {link.label}
-          </Link>
-        </li>
+        <Link
+          key={link.label}
+          href={link.href}
+          className={`inline-block ${
+            currentPath === link.href && 'underline underline-offset-2'
+          } ${mobile ? mobileStyles : desktopStyles}`}
+        >
+          {link.label}
+        </Link>
       ))}
     </>
   );
