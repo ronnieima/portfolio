@@ -27,7 +27,7 @@ export default function RootLayout({
         ></Script>
       </head>
       <body
-        className={`bg-background min-h-screen flex flex-col ${inter.className}`}
+        className={`grid min-h-[100svh] grid-rows-[64px_1fr_64px] overflow-y-hidden bg-background ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <NavBar />

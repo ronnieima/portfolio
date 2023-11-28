@@ -4,9 +4,9 @@ import React from "react";
 function UnderConstructionPage() {
   return (
     <div
-      className={`${notoSerif.className} flex justify-center items-center text-4xl h-[100svh] px-8 text-center`}
+      className={`${notoSerif.className} flex h-full items-center justify-center text-center text-4xl`}
     >
-      under construction.
+      <h1>under construction.</h1>
     </div>
   );
 }
