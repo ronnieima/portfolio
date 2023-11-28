@@ -3,8 +3,8 @@ import React, { ReactNode } from 'react';
 
 function Footer() {
   return (
-    <footer className=" animate-fade-up grid-cols-8 px-4 pb-4 animate-duration-[2000ms] sm:grid ">
-      <p className="col-span-3 row-start-3 text-xs text-secondary-foreground">
+    <footer className="m-auto max-w-screen-lg animate-fade-up grid-cols-8 px-4 pb-1 text-center  animate-duration-[2000ms]">
+      <p className="text-xs text-muted-foreground">
         Coded in{' '}
         <HoverableLink url="https://code.visualstudio.com/">
           Visual Studio Code
@@ -39,7 +39,7 @@ interface HoverableLinkProps {
 
 function HoverableLink({ children, url }: HoverableLinkProps) {
   return (
-    <Link href={url} target="_blank" className="text-blue-300 hover:opacity-80">
+    <Link href={url} target="_blank" className="text-primary hover:opacity-80">
       {children}
     </Link>
   );

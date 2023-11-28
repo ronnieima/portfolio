@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`grid min-h-[100svh] grid-rows-[64px_1fr_64px] overflow-y-hidden bg-background ${inter.className}`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="system">
           <NavBar />
           {children}
           <Footer />

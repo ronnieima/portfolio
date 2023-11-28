@@ -12,7 +12,7 @@ function Kanji() {
         title="imagawa"
       />
       <p
-        className=" animate-fade-left text-center text-lg animate-duration-[2000ms]"
+        className=" animate-fade-left text-center text-lg text-secondary animate-duration-[2000ms]"
         style={{ writingMode: 'vertical-rl' }}
       >
         &#40; imagawa &#41;

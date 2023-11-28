@@ -9,6 +9,7 @@ import {
 import { MenuIcon } from 'lucide-react';
 import NavLinks from './ui/NavLinks';
 import SocialLinks from './ui/SocialLinks';
+import Crest from './ui/Crest';
 
 function MobileMenu() {
   return (
@@ -17,11 +18,13 @@ function MobileMenu() {
         <MenuIcon size={32} />
       </SheetTrigger>
       <SheetContent
-        className="flex h-[70%] flex-col justify-between"
+        className="flex h-[70%] flex-col items-center justify-between"
         side="top"
       >
         <SheetHeader>
-          <SheetTitle>navigation.</SheetTitle>
+          <SheetTitle>
+            <Crest size={60} />
+          </SheetTitle>
         </SheetHeader>
         <ul className="flex flex-col items-center justify-center gap-8">
           <NavLinks mobile={true} />

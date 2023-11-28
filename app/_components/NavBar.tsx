@@ -8,9 +8,9 @@ import { ModeToggle } from './ui/ModeToggle';
 
 function NavBar() {
   return (
-    <nav className="flex max-w-screen-2xl animate-fade-down items-center justify-between gap-10 bg-transparent px-4 animate-duration-[2000ms] lg:mx-auto ">
+    <nav className="flex max-w-screen-2xl animate-fade-down items-center justify-between gap-10 bg-transparent px-4 animate-duration-[2000ms] lg:mx-auto">
       <Link href="/" className="flex items-center gap-4">
-        <Crest />
+        <Crest size={30} />
         <h2>ronnie kaito imagawa.</h2>
       </Link>
 
