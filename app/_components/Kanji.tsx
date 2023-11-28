@@ -4,14 +4,19 @@ import logo from "../../public/imagawa.svg";
 
 function Kanji() {
   return (
-    <div className="col-start-2 col-end-4 row-start-2 animate-fade animate-duration-[4000ms]">
+    <div className="col-start-2 col-end-4 row-start-2 flex gap-4 justify-center ">
       <Image
         src={logo}
-        className="pointer-events-none"
+        className="pointer-events-none animate-fade animate-duration-[4000ms]"
         alt="Imagawa Kanji"
         title="imagawa"
       />
-      <p className="text-right">&#40;imagawa&#41;</p>
+      <p
+        className=" animate-fade-left animate-duration-[2000ms] text-center text-lg"
+        style={{ writingMode: "vertical-rl" }}
+      >
+        &#40; imagawa &#41;
+      </p>
     </div>
   );
 }
