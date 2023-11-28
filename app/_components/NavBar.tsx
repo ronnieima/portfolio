@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -8,10 +7,9 @@ import NavLinks from "./ui/NavLinks";
 import SocialLinks from "./ui/SocialLinks";
 
 function NavBar() {
-  const currentPath = usePathname();
   return (
     <nav className="flex justify-between h-[64px] items-center px-4 bg-transparent animate-fade-down animate-duration-[2000ms]">
-      <Link href="/" className="flex gap-2 items-center">
+      <Link href="/" className="flex gap-4 items-center">
         <Crest />
         <h2 className="hover:scale-[1.02]">ronnie kaito imagawa.</h2>
       </Link>
