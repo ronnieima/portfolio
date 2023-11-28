@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import Crest from "./ui/Crest";
 import MobileMenu from "./MobileMenu";
@@ -14,17 +13,14 @@ function NavBar() {
         <h2 className="hover:scale-[1.02]">ronnie kaito imagawa.</h2>
       </Link>
 
-      {/* NAV LINKS */}
       <ul className="lg:flex hidden gap-16">
         <NavLinks />
       </ul>
 
-      {/* SOCIAL MEDIA LINKS */}
       <ul className="lg:flex hidden gap-2">
         <SocialLinks />
       </ul>
 
-      {/* MOBILE MENU */}
       <MobileMenu />
     </nav>
   );
