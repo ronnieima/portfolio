@@ -1,5 +1,5 @@
 import React from "react";
-import UnderConstructionPage from "../_components/UnderConstructionPage.tsx";
+import UnderConstructionPage from "../_components/UnderConstructionPage";
 
 function ProjectsPage() {
   return <UnderConstructionPage />;
