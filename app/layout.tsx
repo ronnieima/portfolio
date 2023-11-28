@@ -29,12 +29,7 @@ export default function RootLayout({
       <body
         className={`bg-background min-h-screen flex flex-col ${inter.className}`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          themes={["light", "dark"]}
-          enableSystem={false}
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <NavBar />
           {children}
           <Footer />
