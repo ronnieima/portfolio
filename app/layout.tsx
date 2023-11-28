@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
-import NavBar from "./_components/NavBar";
-import { ThemeProvider } from "@/app/_components/Providers";
-import "./globals.css";
-import Script from "next/script";
-import Footer from "./_components/Footer";
-import { inter } from "@/utils/fonts";
+import type { Metadata } from 'next';
+import NavBar from './_components/NavBar';
+import { ThemeProvider } from '@/app/_components/Providers';
+import './globals.css';
+import Script from 'next/script';
+import Footer from './_components/Footer';
+import { inter } from '@/utils/fonts';
 
 export const metadata: Metadata = {
-  title: "Ronnie Kaito Imagawa | Portfolio",
+  title: 'Ronnie Kaito Imagawa | Portfolio',
   description:
-    "Passionate full stack developer that turns ideas into digitized realities.",
+    'Passionate full stack developer that turns ideas into digitized realities.',
 };
 
 export default function RootLayout({

@@ -1,5 +1,5 @@
-import { notoSerif } from "@/utils/fonts";
-import React from "react";
+import { notoSerif } from '@/utils/fonts';
+import React from 'react';
 
 function UnderConstructionPage() {
   return (

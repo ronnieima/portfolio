@@ -1,7 +1,7 @@
-import React from "react";
-import Kanji from "./Kanji";
-import HeroSubtitle from "./ui/HeroSubtitle";
-import Greeting from "./ui/Greeting";
+import React from 'react';
+import Kanji from './Kanji';
+import HeroSubtitle from './ui/HeroSubtitle';
+import Greeting from './ui/Greeting';
 
 function Hero() {
   return (

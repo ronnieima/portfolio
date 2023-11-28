@@ -1,5 +1,5 @@
-import React from "react";
-import UnderConstructionPage from "../_components/UnderConstructionPage";
+import React from 'react';
+import UnderConstructionPage from '../_components/UnderConstructionPage';
 
 function ContactPage() {
   return <UnderConstructionPage />;

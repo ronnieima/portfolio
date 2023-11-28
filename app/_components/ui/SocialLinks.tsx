@@ -1,9 +1,9 @@
-import Link from "next/link";
-import React from "react";
-import { SocialIcon } from "react-social-icons/component";
-import "react-social-icons/github";
-import "react-social-icons/linkedin";
-import "react-social-icons/x";
+import Link from 'next/link';
+import React from 'react';
+import { SocialIcon } from 'react-social-icons/component';
+import 'react-social-icons/github';
+import 'react-social-icons/linkedin';
+import 'react-social-icons/x';
 type SocialType = {
   network: string;
   url: string;
@@ -11,16 +11,16 @@ type SocialType = {
 
 const socials: SocialType[] = [
   {
-    network: "linkedin",
-    url: "https://www.linkedin.com/in/ronnie-kaito-imagawa/",
+    network: 'linkedin',
+    url: 'https://www.linkedin.com/in/ronnie-kaito-imagawa/',
   },
   {
-    network: "x",
-    url: "https://twitter.com/imagawaDev",
+    network: 'x',
+    url: 'https://twitter.com/imagawaDev',
   },
   {
-    network: "github",
-    url: "https://github.com/ronnieima",
+    network: 'github',
+    url: 'https://github.com/ronnieima',
   },
 ];
 function SocialLinks() {
@@ -33,7 +33,7 @@ function SocialLinks() {
               as="div"
               network={social.network}
               bgColor="transparent"
-              className="hover:scale-110 invert dark:invert-0"
+              className="invert hover:scale-110 dark:invert-0"
             />
           </Link>
         </li>

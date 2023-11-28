@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 type BentoBoxProps = {
   children: ReactNode;
@@ -8,7 +8,7 @@ type BentoBoxProps = {
 function BentoBox({ children, className }: BentoBoxProps) {
   return (
     <div
-      className={`bg-neutral-900 text-white rounded-3xl p-8 col-span-full shadow-sm shadow-zinc-800  ${className}`}
+      className={`col-span-full rounded-3xl bg-neutral-900 p-8 text-white shadow-sm shadow-zinc-800  ${className}`}
     >
       {children}
     </div>

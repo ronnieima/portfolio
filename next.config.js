@@ -5,9 +5,9 @@ module.exports = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "res.cloudinary.com",
-        pathname: "/dfpbpun9z/**",
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/dfpbpun9z/**',
       },
     ],
   },
