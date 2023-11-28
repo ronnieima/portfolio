@@ -7,7 +7,7 @@ function Kanji() {
     <div className="col-start-2 col-end-4 row-start-2 flex gap-4 justify-center ">
       <Image
         src={logo}
-        className="pointer-events-none animate-fade animate-duration-[4000ms]"
+        className="pointer-events-none animate-fade animate-duration-[4000ms] invert dark:invert-0"
         alt="Imagawa Kanji"
         title="imagawa"
       />

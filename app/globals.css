@@ -27,8 +27,8 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: #ffffff;
+    --background: 0, 0%, 7%;
+    --foreground: 0, 0%, 100%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
@@ -55,5 +55,6 @@
   }
   body {
     @apply bg-background text-foreground;
+    @apply transition-colors duration-300;
   }
 }

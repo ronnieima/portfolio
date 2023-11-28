@@ -4,6 +4,7 @@ import Crest from "./ui/Crest";
 import MobileMenu from "./MobileMenu";
 import NavLinks from "./ui/NavLinks";
 import SocialLinks from "./ui/SocialLinks";
+import { ModeToggle } from "./ui/ModeToggle";
 
 function NavBar() {
   return (
@@ -17,11 +18,13 @@ function NavBar() {
         <NavLinks />
       </ul>
 
-      <ul className="lg:flex hidden gap-2">
-        <SocialLinks />
-      </ul>
-
-      <MobileMenu />
+      <div className="flex align-middle gap-3">
+        <ul className="lg:flex hidden gap-2">
+          <SocialLinks />
+        </ul>
+        <ModeToggle />
+        <MobileMenu />
+      </div>
     </nav>
   );
 }

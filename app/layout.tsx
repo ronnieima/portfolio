@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import NavBar from "./_components/NavBar";
-import { Providers } from "./_components/Providers";
+import { ThemeProvider } from "@/app/_components/Providers";
 import "./globals.css";
 import Script from "next/script";
 import Footer from "./_components/Footer";
@@ -27,13 +27,18 @@ export default function RootLayout({
         ></Script>
       </head>
       <body
-        className={`bg-[#121212] min-h-screen flex flex-col ${inter.className}`}
+        className={`bg-background min-h-screen flex flex-col ${inter.className}`}
       >
-        <Providers>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          themes={["light", "dark"]}
+          enableSystem={false}
+        >
           <NavBar />
           {children}
           <Footer />
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

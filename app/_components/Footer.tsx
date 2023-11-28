@@ -4,7 +4,7 @@ import React, { ReactNode } from "react";
 function Footer() {
   return (
     <footer className=" animate-duration-[2000ms] sm:grid grid-cols-8 px-4 animate-fade-up mt-auto pb-4 h-fit  ">
-      <p className="col-span-3 row-start-3 text-xs text-zinc-300">
+      <p className="col-span-3 row-start-3 text-xs text-secondary-foreground">
         Coded in{" "}
         <HoverableLink url="https://code.visualstudio.com/">
           Visual Studio Code
