@@ -25,24 +25,26 @@ const links: LinkType[] = [
 ];
 
 const mobileStyles =
-  'hover:bg-slate-600 rounded-lg text-center text-xl lg:text-4xl px-6 py-2';
+  'hover:opacity-80  rounded-lg text-center text-xl lg:text-4xl px-6 py-2';
 
-const desktopStyles = 'hover:text-slate-400';
+const desktopStyles = 'hover:text-secondary';
 
 function NavLinks({ mobile }: { mobile?: boolean }) {
   const currentPath = usePathname();
   return (
     <>
-      {links.map((link) => (
-        <Link
+      {links.map((link, i) => (
+        <div
           key={link.label}
-          href={link.href}
-          className={`inline-block ${
-            currentPath === link.href && 'underline underline-offset-2'
-          } ${mobile ? mobileStyles : desktopStyles}`}
+          className={`
+          ${currentPath === link.href && 'text-secondary'} 
+          ${mobile ? mobileStyles : desktopStyles}
+          `}
         >
-          {link.label}
-        </Link>
+          <Link href={link.href}>
+            <span className="text-sm">0{i + 1}</span> &#47;&#47; {link.label}
+          </Link>
+        </div>
       ))}
     </>
   );
