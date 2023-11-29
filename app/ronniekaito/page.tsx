@@ -25,6 +25,7 @@ function AboutMePage() {
           alt="My Headshot Photo"
           width={200}
           height={200}
+          priority={true}
           className=" mx-auto rounded-full sm:w-4/5"
         />
         <Image

@@ -10,6 +10,7 @@ function Kanji() {
         className="pointer-events-none animate-fade invert animate-duration-[4000ms] dark:invert-0"
         alt="Imagawa Kanji"
         title="imagawa"
+        priority={true}
       />
       <p
         className=" animate-fade-left text-center text-lg text-secondary animate-duration-[2000ms]"
