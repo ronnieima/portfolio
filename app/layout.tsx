@@ -27,7 +27,7 @@ export default function RootLayout({
         ></Script>
       </head>
       <body
-        className={`grid min-h-[100svh] grid-rows-[64px_1fr_64px] bg-background md:overflow-y-hidden ${inter.className}`}
+        className={`grid min-h-[100svh] grid-rows-[64px_1fr_64px] bg-background md:overflow-y-auto ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           <NavBar />
