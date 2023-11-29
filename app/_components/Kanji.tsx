@@ -1,17 +1,15 @@
-import Image from 'next/image';
+import { notoSerifJapanese } from '@/utils/fonts';
 import React from 'react';
-import logo from '../../public/imagawa.svg';
 
 function Kanji() {
   return (
-    <div className="col-start-2 col-end-4 row-start-2 flex justify-center gap-4 ">
-      <Image
-        src={logo}
-        className="pointer-events-none animate-fade invert animate-duration-[4000ms] dark:invert-0"
-        alt="Imagawa Kanji"
-        title="imagawa"
-        priority={true}
-      />
+    <div className="col-start-2 col-end-4 row-start-2 flex items-center justify-center">
+      <h2
+        className={`${notoSerifJapanese.className} block animate-fade text-center text-[7rem] animate-duration-[4000ms] sm:text-[14rem] md:text-[16rem] lg:text-[21rem]`}
+        title="Imagawa in Japanese Kanji"
+      >
+        今川
+      </h2>
       <p
         className=" animate-fade-left text-center text-lg text-secondary animate-duration-[2000ms]"
         style={{ writingMode: 'vertical-rl' }}
