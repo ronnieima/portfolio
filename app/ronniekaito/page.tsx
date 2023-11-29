@@ -5,7 +5,7 @@ import { notoSerif } from '@/utils/fonts';
 
 function AboutMePage() {
   return (
-    <main className="flex max-w-screen-xl animate-fade-down grid-cols-[0.5fr_1fr_2fr_0.5fr] grid-rows-2 flex-col items-center gap-8 px-16 animate-duration-1000 md:mx-auto md:grid md:gap-0">
+    <main className="flex max-w-screen-xl animate-fade-down grid-cols-[0.5fr_1fr_2fr_0.5fr] flex-col items-center gap-8 px-16 animate-duration-1000 md:mx-auto md:grid md:gap-0">
       <div className="relative col-start-2 flex w-full flex-col items-center gap-4 self-center text-2xl tracking-widest">
         <p>ABOUT ME</p>
         <Image
