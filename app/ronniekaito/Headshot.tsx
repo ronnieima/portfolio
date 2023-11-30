@@ -5,10 +5,10 @@ import React from 'react';
 
 async function Headshot() {
   const headshotBlurUrl = await getBase64(
-    'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265416/headshot_qjs2sx.jpg',
+    'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265416/portfolio/headshot.jpg',
   );
   const guamFlagBlurUrl = await getBase64(
-    'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265415/Flag_of_Guam_ffy2ym.svg',
+    'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265415/portfolio/Flag_of_Guam.svg',
   );
   return (
     <div className="pointer-events-none relative col-start-2 flex animate-fade-left flex-col items-center self-center justify-self-end animate-duration-1000">
@@ -27,7 +27,7 @@ async function Headshot() {
         />
       </header>
       <Image
-        src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265416/headshot_qjs2sx.jpg"
+        src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265416/portfolio/headshot.jpg"
         alt="My Headshot Photo"
         width={200}
         height={200}
@@ -37,7 +37,7 @@ async function Headshot() {
         className=" mx-auto rounded-full sm:w-4/5"
       />
       <Image
-        src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265415/Flag_of_Guam_ffy2ym.svg"
+        src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265415/portfolio/Flag_of_Guam.svg"
         alt="Flag of Guam"
         width={100}
         height={50}
