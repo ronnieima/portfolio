@@ -7,5 +7,9 @@ export const guamFlagUrl =
 export const arrowUrl =
   'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265414/portfolio/arrow_rzqyl8.svg';
 
+// PROJECTS
 export const portfolioImageUrl =
   'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701335356/portfolio/portfolio.png';
+
+export const calculatorUrl =
+  'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701350259/portfolio/usafptcalculator_dd3hnp.png';
