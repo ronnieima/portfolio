@@ -34,7 +34,7 @@ function NavLinks({ mobile }: { mobile?: boolean }) {
   return (
     <>
       {links.map((link, i) => (
-        <div
+        <li
           key={link.label}
           className={`
           ${currentPath === link.href && 'text-secondary'} 
@@ -44,7 +44,7 @@ function NavLinks({ mobile }: { mobile?: boolean }) {
           <Link href={link.href}>
             <span className="text-sm">0{i + 1}</span> &#47;&#47; {link.label}
           </Link>
-        </div>
+        </li>
       ))}
     </>
   );
