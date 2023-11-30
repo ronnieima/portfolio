@@ -15,7 +15,7 @@ export type Project = {
 const projects: Project[] = [
   {
     title: 'Portfolio Website',
-    url: '/projects/portfolio',
+    url: '#',
     imageUrl: portfolioImageUrl,
     imageAltText: 'My Portfolio Website',
     className: 'col-span-full animate-fade-right',
