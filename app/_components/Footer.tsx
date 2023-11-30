@@ -39,7 +39,11 @@ interface HoverableLinkProps {
 
 function HoverableLink({ children, url }: HoverableLinkProps) {
   return (
-    <Link href={url} target="_blank" className="text-primary hover:opacity-80">
+    <Link
+      href={url}
+      target="_blank"
+      className="italic text-primary hover:opacity-80"
+    >
       {children}
     </Link>
   );
