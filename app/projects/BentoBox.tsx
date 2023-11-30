@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 type BentoBoxProps = {
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
 };
 

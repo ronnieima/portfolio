@@ -1,15 +1,9 @@
-import getBase64 from '@/lib/getLocalBase64';
 import { notoSerif } from '@/utils/fonts';
+import { arrowUrl, guamFlagUrl, headshotUrl } from '@/utils/imageUrls';
 import Image from 'next/image';
 import React from 'react';
 
 async function Headshot() {
-  const headshotBlurUrl = await getBase64(
-    'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265416/portfolio/headshot.jpg',
-  );
-  const guamFlagBlurUrl = await getBase64(
-    'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265415/portfolio/Flag_of_Guam.svg',
-  );
   return (
     <div className="pointer-events-none relative col-start-2 flex animate-fade-left flex-col items-center self-center justify-self-end animate-duration-1000">
       <header className="relative">
@@ -19,7 +13,7 @@ async function Headshot() {
           ABOUT ME
         </p>
         <Image
-          src="/arrow.svg"
+          src={arrowUrl}
           alt="arrow"
           width={40}
           height={40}
@@ -27,23 +21,19 @@ async function Headshot() {
         />
       </header>
       <Image
-        src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265416/portfolio/headshot.jpg"
+        src={headshotUrl}
         alt="My Headshot Photo"
         width={200}
         height={200}
         priority={true}
-        placeholder="blur"
-        blurDataURL={headshotBlurUrl}
         className=" mx-auto rounded-full sm:w-4/5"
       />
       <Image
-        src="https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265415/portfolio/Flag_of_Guam.svg"
+        src={guamFlagUrl}
         alt="Flag of Guam"
         width={100}
         height={50}
-        placeholder="blur"
         className="absolute bottom-0 right-0 w-2/5"
-        blurDataURL={guamFlagBlurUrl}
       />
     </div>
   );
