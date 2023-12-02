@@ -4,6 +4,7 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
+  CardTitle,
 } from '@/components/ui/card';
 import {
   Form,
@@ -13,7 +14,6 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import 'react-toastify/dist/ReactToastify.css';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -54,10 +54,10 @@ function ContactCard() {
 
   return (
     <Card>
-      <CardHeader></CardHeader>
+      <CardHeader>
+        <CardTitle>Send a message</CardTitle>
+      </CardHeader>
       <CardContent>
-        <ToastContainer />
-
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
