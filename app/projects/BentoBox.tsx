@@ -3,11 +3,15 @@ import { ReactNode } from 'react';
 type BentoBoxProps = {
   children?: ReactNode;
   className?: string;
+  key: string;
 };
 
-function BentoBox({ children, className }: BentoBoxProps) {
+function BentoBox({ children, className, key }: BentoBoxProps) {
   return (
-    <div className={` rounded-3xl bg-muted p-8 text-foreground ${className}`}>
+    <div
+      key={key}
+      className={` rounded-3xl bg-muted p-8 text-foreground ${className}`}
+    >
       {children}
     </div>
   );

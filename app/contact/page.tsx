@@ -1,6 +1,3 @@
-import React from 'react';
-
-import UnderConstructionPage from '../_components/UnderConstructionPage';
 import ContactCard from './ContactCard';
 import ContactHeader from './ContactHeader';
 

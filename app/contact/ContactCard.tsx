@@ -4,7 +4,6 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
 } from '@/components/ui/card';
 import {
   Form,
@@ -18,9 +17,9 @@ import {
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { notoSerif } from '@/utils/fonts';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 import { z } from 'zod';
 
 const formSchema = z.object({
@@ -29,7 +28,7 @@ const formSchema = z.object({
   message: z.string().min(1),
 });
 
-type Form = z.infer<typeof formSchema>;
+export type Form = z.infer<typeof formSchema>;
 
 function ContactCard() {
   const form = useForm<Form>({
@@ -37,18 +36,27 @@ function ContactCard() {
   });
 
   async function onSubmit(data: Form) {
-    //toast
-    console.log(data);
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.status === 200) {
+      toast.success('Message sent, thank you for your time!');
+    } else {
+      toast.error('Error occured. Message was not sent. :(');
+    }
   }
 
   return (
     <Card className="mb-16 w-full">
       <CardHeader>
-        <CardDescription>
-          <p className="text-sm text-muted-foreground">
-            Leave a message below, and I&apos;ll get back to you as soon as
-            possible.
-          </p>
+        <CardDescription className="text-sm text-muted-foreground">
+          Leave a message below, and I&apos;ll get back to you as soon as
+          possible.
         </CardDescription>
       </CardHeader>
       <CardContent>

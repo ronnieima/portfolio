@@ -5,6 +5,7 @@ import './globals.css';
 import Script from 'next/script';
 import Footer from './_components/Footer';
 import { inter } from '@/utils/fonts';
+import ToastContainerWrapper from './_components/ToastContainerWrapper';
 
 export const metadata: Metadata = {
   title: 'Ronnie Kaito Imagawa | Portfolio',
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`grid min-h-[100svh] grid-rows-[64px_1fr_64px] bg-background md:overflow-y-auto ${inter.className}`}
       >
+        <ToastContainerWrapper />
         <ThemeProvider attribute="class" defaultTheme="system">
           <NavBar />
           {children}
