@@ -5,6 +5,8 @@ import './globals.css';
 import Script from 'next/script';
 import Footer from './_components/Footer';
 import { inter } from '@/utils/fonts';
+import 'react-toastify/dist/ReactToastify.css';
+import ToastContainerWrapper from './_components/ToastContainerWrapper';
 
 export const metadata: Metadata = {
   title: 'Ronnie Kaito Imagawa | Portfolio',
@@ -33,6 +35,7 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
+          <ToastContainerWrapper />
         </ThemeProvider>
       </body>
     </html>
