@@ -1,8 +1,16 @@
 import React from 'react';
+
 import UnderConstructionPage from '../_components/UnderConstructionPage';
+import ContactCard from './ContactCard';
+import ContactHeader from './ContactHeader';
 
 function ContactPage() {
-  return <UnderConstructionPage />;
+  return (
+    <main className="px-8">
+      <ContactHeader />
+      <ContactCard />
+    </main>
+  );
 }
 
 export default ContactPage;
