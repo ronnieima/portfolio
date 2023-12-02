@@ -13,13 +13,14 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import { z } from 'zod';
 
 const formSchema = z.object({
@@ -52,14 +53,11 @@ function ContactCard() {
   }
 
   return (
-    <Card className="mb-16 w-full">
-      <CardHeader>
-        <CardDescription className="text-sm text-muted-foreground">
-          Leave a message below, and I&apos;ll get back to you as soon as
-          possible.
-        </CardDescription>
-      </CardHeader>
+    <Card>
+      <CardHeader></CardHeader>
       <CardContent>
+        <ToastContainer />
+
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}

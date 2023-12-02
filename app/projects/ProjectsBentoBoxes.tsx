@@ -47,7 +47,7 @@ function ProjectsBentoBoxes() {
       {projects.map((project) => {
         return (
           <BentoBox
-            key={project.title}
+            key={project.title!}
             className={`group relative ${project.className} animate-duration-[2000ms] `}
           >
             <Link href={project.url}>

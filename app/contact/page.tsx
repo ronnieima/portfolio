@@ -1,13 +1,10 @@
 import { ToastContainer } from 'react-toastify';
 import ContactCard from './ContactCard';
 import ContactHeader from './ContactHeader';
-import 'react-toastify/dist/ReactToastify.css';
-
 
 function ContactPage() {
   return (
-    <main className="px-8">
-      <ToastContainer/>
+    <main className="mx-auto max-h-[700px] max-w-xl gap-x-8 px-8 py-8">
       <ContactHeader />
       <ContactCard />
     </main>
