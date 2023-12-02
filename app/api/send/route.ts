@@ -10,10 +10,10 @@ export async function POST(request: Request) {
     console.log(body);
     const { name, email, message } = body;
     const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
+      from: 'Darius <dariusboldy@resend.dev>',
       to: 'ronnie.imagawa@gmail.com',
-      subject: `${name} - ${email}`,
-      react: EmailTemplate({ message: message }) as React.ReactElement,
+      subject: `Contact message from imagawa.dev : ${name} - ${email}`,
+      react: EmailTemplate({ message: message, name: name, email: email }) as React.ReactElement,
     });
     console.log('email sent');
     return NextResponse.json(data);

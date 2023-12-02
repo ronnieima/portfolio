@@ -1,14 +1,14 @@
 import * as React from 'react';
+import { Form } from './ContactCard';
 
-interface EmailTemplateProps {
-  message: string;
-}
 
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-  message,
+
+export const EmailTemplate: React.FC<Readonly<Form>> = ({
+  message, email, name
 }) => (
   <div>
-    <h1>New contact message from imagawa.dev</h1>
+    <p>New contact message from imagawa.dev</p>
+    <p>Sender: {name} {email}</p>
     <p>{message}</p>
   </div>
 );
