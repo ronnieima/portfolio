@@ -1,4 +1,3 @@
-import { ToastContainer } from 'react-toastify';
 import ContactCard from './ContactCard';
 import ContactHeader from './ContactHeader';
 
