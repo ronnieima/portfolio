@@ -18,11 +18,11 @@ function ProjectDetailPage() {
   }
   return (
     <main className="px-4 lg:mx-auto">
-      <Button className=" self-start" variant={'outline'}>
-        <Link href={'/projects'} className=" flex items-center gap-4">
+      <Link href={'/projects'}>
+        <Button className="flex gap-4" variant={'outline'}>
           <ArrowLeft /> Back to projects
-        </Link>
-      </Button>
+        </Button>
+      </Link>
 
       <section className="flex flex-col items-center  py-8 lg:relative lg:mx-auto lg:grid lg:max-w-screen-xl lg:grid-cols-2 lg:gap-8">
         <Image
@@ -43,16 +43,12 @@ function ProjectDetailPage() {
           )}
           <p>{project.description}</p>
           <div className="flex flex-col gap-4 lg:flex-row">
-            <Button asChild>
-              <Link href={project.links.url} target="_blank">
-                Visit the website
-              </Link>
-            </Button>
-            <Button>
-              <Link href={project.links.githubUrl} target="_blank">
-                View the GitHub repository
-              </Link>
-            </Button>
+            <Link href={project.links.url} target="_blank">
+              <Button>Visit the website</Button>
+            </Link>
+            <Link href={project.links.githubUrl} target="_blank">
+              <Button>View the GitHub repository</Button>
+            </Link>
           </div>
         </div>
       </section>
