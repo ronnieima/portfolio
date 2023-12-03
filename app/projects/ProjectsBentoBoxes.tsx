@@ -5,12 +5,13 @@ import { calculatorUrl, portfolioImageUrl } from '@/utils/imageUrls';
 import Link from 'next/link';
 
 export type Project = {
-  id?: string;
-  title?: string;
+  id: string;
+  title: string;
+  technologies: string[];
   url: string;
-  imageUrl?: string;
-  imageAltText?: string;
-  className?: string;
+  imageUrl: string;
+  imageAltText: string;
+  className: string;
 };
 
 export const projects: Project[] = [
@@ -21,6 +22,7 @@ export const projects: Project[] = [
     imageUrl: portfolioImageUrl,
     imageAltText: 'My Portfolio Website',
     className: 'col-span-full animate-fade-right',
+    technologies: ['Next.js', 'React.js', 'Tailwind CSS'],
   },
   {
     id: 'usafptcalculator',
@@ -29,18 +31,34 @@ export const projects: Project[] = [
     imageUrl: calculatorUrl,
     imageAltText: 'My Portfolio Website',
     className: 'md:row-span-2 animate-fade-up',
+    technologies: ['Next.js', 'React.js', 'Tailwind CSS', 'Supabase'],
   },
   {
+    id: '',
+    title: '',
     url: '#',
+    imageUrl: '',
+    imageAltText: '',
     className: 'md:col-span-2 animate-fade-left',
+    technologies: [],
   },
   {
+    id: '',
+    title: '',
     url: '#',
+    imageUrl: '',
+    imageAltText: '',
     className: 'animate-fade-up',
+    technologies: [],
   },
   {
+    id: '',
+    title: '',
     url: '#',
-    className: 'animate-fade-left ',
+    imageUrl: '',
+    imageAltText: '',
+    className: 'animate-fade-left',
+    technologies: [],
   },
 ];
 
