@@ -9,42 +9,63 @@ export type Project = {
   title: string;
   description: string;
   technologies: string[];
-  url: string;
-  imageUrl: string;
+  links: {
+    url: string;
+    githubUrl: string;
+    imageUrl: string;
+  };
   imageAltText: string;
   className: string;
 };
 
-// might have to migrate this to an acutal database to scale more
+// might have to migrate this to an actual database to scale more
 export const projects: Project[] = [
   {
     id: 'portfolio',
     title: 'Portfolio Website',
     description: '',
-    url: '/projects/portfolio',
-    imageUrl: portfolioImageUrl,
+    links: {
+      url: 'https://www.imagawa.dev',
+      githubUrl: 'https://github.com/ronnieima/portfolio',
+      imageUrl: portfolioImageUrl,
+    },
     imageAltText: 'My Portfolio Website',
     className: 'col-span-full animate-fade-right',
-    technologies: ['Next.js', 'React.js', 'Tailwind CSS'],
+    technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
     id: 'usafptcalculator',
-    title: 'USAF PT Calculator',
+    title: 'USAF Physical Training Fitness Exam Calculator',
     description: `A modern web app simplifying PT test score calculations for US Air
     Force service members. Built with Next.js, React.js, TypeScript,
     TailwindCSS, and Supabase.`,
-    url: '/projects/usafptcalculator',
-    imageUrl: calculatorUrl,
+
+    links: {
+      url: 'https://www.usafptcalculator.com',
+      githubUrl: 'https://github.com/ronnieima/usaf-pt-calculator',
+      imageUrl: calculatorUrl,
+    },
+
     imageAltText: 'My Portfolio Website',
     className: 'md:row-span-2 animate-fade-up',
-    technologies: ['Next.js', 'React.js', 'Tailwind CSS', 'Supabase'],
+    technologies: [
+      'Next.js',
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Supabase',
+    ],
   },
   {
     id: '',
     title: '',
     description: '',
-    url: '#',
-    imageUrl: '',
+    links: {
+      url: '#',
+      githubUrl: '',
+      imageUrl: '',
+    },
+
     imageAltText: '',
     className: 'md:col-span-2 animate-fade-left',
     technologies: [],
@@ -53,8 +74,11 @@ export const projects: Project[] = [
     id: '',
     title: '',
     description: '',
-    url: '#',
-    imageUrl: '',
+    links: {
+      url: '#',
+      githubUrl: '',
+      imageUrl: '',
+    },
     imageAltText: '',
     className: 'animate-fade-up',
     technologies: [],
@@ -63,8 +87,11 @@ export const projects: Project[] = [
     id: '',
     title: '',
     description: '',
-    url: '#',
-    imageUrl: '',
+    links: {
+      url: '#',
+      githubUrl: '',
+      imageUrl: '',
+    },
     imageAltText: '',
     className: 'animate-fade-left',
     technologies: [],
@@ -80,15 +107,15 @@ function ProjectsBentoBoxes() {
             key={project.title!}
             className={`group relative ${project.className} animate-duration-[2000ms] `}
           >
-            <Link href={project.url}>
+            <Link href={`/projects/${project.id}`}>
               <h2
                 className={` z-50  flex h-full items-center justify-center text-center text-5xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100`}
               >
                 {project.title}
               </h2>
-              {project.imageUrl && project.imageAltText && (
+              {project.links.imageUrl && project.imageAltText && (
                 <Image
-                  src={project.imageUrl}
+                  src={project.links.imageUrl}
                   alt={project.imageAltText}
                   fill
                   objectFit="cover"
