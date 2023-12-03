@@ -8,7 +8,7 @@ type BadgeListProps = {
 
 function BadgeList({ technologies }: BadgeListProps) {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-wrap justify-center gap-4">
       {technologies.map((technology) => {
         return (
           <Badge className="h-8" variant={'outline'} key={technology}>
