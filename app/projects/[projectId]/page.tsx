@@ -19,7 +19,7 @@ function ProjectDetailPage() {
   return (
     <main className="px-4 lg:mx-auto">
       <Link href={'/projects'}>
-        <Button className="flex gap-4" variant={'outline'}>
+        <Button className="flex gap-4">
           <ArrowLeft /> Back to projects
         </Button>
       </Link>
