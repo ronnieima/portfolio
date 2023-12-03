@@ -5,6 +5,7 @@ import { calculatorUrl, portfolioImageUrl } from '@/utils/imageUrls';
 import Link from 'next/link';
 
 export type Project = {
+  id?: string;
   title?: string;
   url: string;
   imageUrl?: string;
@@ -12,17 +13,19 @@ export type Project = {
   className?: string;
 };
 
-const projects: Project[] = [
+export const projects: Project[] = [
   {
+    id: 'portfolio',
     title: 'Portfolio Website',
-    url: '#',
+    url: '/projects/portfolio',
     imageUrl: portfolioImageUrl,
     imageAltText: 'My Portfolio Website',
     className: 'col-span-full animate-fade-right',
   },
   {
+    id: 'usafptcalculator',
     title: 'USAF PT Calculator',
-    url: 'https://www.usafptcalculator.com',
+    url: '/projects/usafptcalculator',
     imageUrl: calculatorUrl,
     imageAltText: 'My Portfolio Website',
     className: 'md:row-span-2 animate-fade-up',
