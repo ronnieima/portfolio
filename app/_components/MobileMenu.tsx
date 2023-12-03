@@ -18,7 +18,7 @@ function MobileMenu() {
         <MenuIcon size={32} />
       </SheetTrigger>
       <SheetContent
-        className="flex h-[70%] flex-col items-center justify-between"
+        className="flex flex-col items-center justify-between gap-8"
         side="top"
       >
         <SheetHeader>
