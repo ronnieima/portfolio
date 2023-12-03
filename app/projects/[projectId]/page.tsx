@@ -15,7 +15,7 @@ function ProjectDetailPage() {
   }
 
   return (
-    <main className="flex flex-col items-center gap-8 px-8">
+    <main className="flex flex-col items-center gap-8 px-4 py-8">
       <Image
         src={project.imageUrl}
         alt={project.imageAltText}
@@ -27,21 +27,7 @@ function ProjectDetailPage() {
         <BadgeList technologies={project.technologies} />
       )}
 
-      <p className="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde vel
-        delectus repellat dolore fugiat tempora ducimus maiores aliquam ab
-        dolores possimus nihil, corrupti repudiandae quo inventore libero
-        tenetur harum dolorum expedita sit laudantium nam. Assumenda animi
-        accusamus voluptatum atque repudiandae! Incidunt exercitationem,
-        voluptatum aliquid explicabo asperiores aperiam voluptate consequuntur
-        vel numquam illum sint nesciunt eveniet culpa nihil reprehenderit
-        laudantium perferendis maiores earum ducimus dolorem. Obcaecati nihil
-        reiciendis sequi ab. Nihil aliquid quia veritatis officiis labore
-        quaerat, modi ab tempora in numquam ex aspernatur dolorum, nobis, nisi
-        dolorem! Nisi eaque facilis quasi, nesciunt nam odio saepe voluptatum ut
-        sed voluptas!
-      </p>
-      {/* Render other details of the project */}
+      <p className="text-center">{project.description}</p>
     </main>
   );
 }

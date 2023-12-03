@@ -7,6 +7,7 @@ import Link from 'next/link';
 export type Project = {
   id: string;
   title: string;
+  description: string;
   technologies: string[];
   url: string;
   imageUrl: string;
@@ -14,10 +15,12 @@ export type Project = {
   className: string;
 };
 
+// might have to migrate this to an acutal database to scale more
 export const projects: Project[] = [
   {
     id: 'portfolio',
     title: 'Portfolio Website',
+    description: '',
     url: '/projects/portfolio',
     imageUrl: portfolioImageUrl,
     imageAltText: 'My Portfolio Website',
@@ -27,6 +30,9 @@ export const projects: Project[] = [
   {
     id: 'usafptcalculator',
     title: 'USAF PT Calculator',
+    description: `A modern web app simplifying PT test score calculations for US Air
+    Force service members. Built with Next.js, React.js, TypeScript,
+    TailwindCSS, and Supabase.`,
     url: '/projects/usafptcalculator',
     imageUrl: calculatorUrl,
     imageAltText: 'My Portfolio Website',
@@ -36,6 +42,7 @@ export const projects: Project[] = [
   {
     id: '',
     title: '',
+    description: '',
     url: '#',
     imageUrl: '',
     imageAltText: '',
@@ -45,6 +52,7 @@ export const projects: Project[] = [
   {
     id: '',
     title: '',
+    description: '',
     url: '#',
     imageUrl: '',
     imageAltText: '',
@@ -54,6 +62,7 @@ export const projects: Project[] = [
   {
     id: '',
     title: '',
+    description: '',
     url: '#',
     imageUrl: '',
     imageAltText: '',
