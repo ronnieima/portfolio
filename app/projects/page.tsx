@@ -1,5 +1,6 @@
 import { notoSerif } from '@/utils/fonts';
 import ProjectsBentoBoxes from './ProjectsBentoBoxes';
+import { Metadata } from 'next';
 
 function ProjectsPage() {
   return (
@@ -12,5 +13,10 @@ function ProjectsPage() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Ronnie Kaito Imagawa | Projects',
+  description: 'Explore the projects I have built!',
+};
 
 export default ProjectsPage;

@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import ContactCard from './ContactCard';
 import ContactHeader from './ContactHeader';
 
@@ -9,5 +10,10 @@ function ContactPage() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Ronnie Kaito Imagawa | Contact',
+  description: 'Feel free to reach out!',
+};
 
 export default ContactPage;

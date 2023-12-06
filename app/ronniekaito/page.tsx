@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { notoSerif } from '@/utils/fonts';
 import Headshot from './Headshot';
+import { Metadata } from 'next';
 
 function AboutMePage() {
   return (
@@ -30,5 +31,10 @@ function AboutMePage() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Ronnie Kaito Imagawa | About Me',
+  description: 'Meet Ronnie Kaito Imagawa.',
+};
 
 export default AboutMePage;
