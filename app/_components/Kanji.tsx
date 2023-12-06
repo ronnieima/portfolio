@@ -5,7 +5,7 @@ function Kanji() {
   return (
     <div className="col-start-2 col-end-4 row-start-2 flex items-center justify-center">
       <h2
-        className={`${notoSerifJapanese.className} block animate-fade text-center text-[12rem] animate-duration-[4000ms] sm:text-[14rem] md:text-[16rem] lg:text-[21rem]`}
+        className={`${notoSerifJapanese.className} block animate-fade text-center text-[9rem] animate-duration-[4000ms] sm:text-[14rem] md:text-[16rem] lg:text-[21rem]`}
         title="Imagawa in Japanese Kanji"
       >
         今川

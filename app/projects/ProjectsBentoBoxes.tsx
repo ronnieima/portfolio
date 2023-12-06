@@ -109,7 +109,7 @@ function ProjectsBentoBoxes() {
           >
             <Link href={`/projects/${project.id}`}>
               <h2
-                className={` z-50  flex h-full items-center justify-center text-center text-5xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100`}
+                className={` z-50  flex h-full items-center justify-center text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-5xl`}
               >
                 {project.title}
               </h2>
