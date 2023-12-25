@@ -13,3 +13,6 @@ export const portfolioImageUrl =
 
 export const calculatorUrl =
   'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701350259/portfolio/usafptcalculator_dd3hnp.png';
+
+export const animePomodoroUrl =
+  'https://res.cloudinary.com/dfpbpun9z/image/upload/v1703531236/portfolio/animedoro_o4foxa.png';

@@ -1,7 +1,11 @@
 import React from 'react';
 import BentoBox from './BentoBox';
 import Image from 'next/image';
-import { calculatorUrl, portfolioImageUrl } from '@/utils/imageUrls';
+import {
+  animePomodoroUrl,
+  calculatorUrl,
+  portfolioImageUrl,
+} from '@/utils/imageUrls';
 import Link from 'next/link';
 
 export type Project = {
@@ -57,18 +61,26 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '',
-    title: '',
-    description: '',
+    id: 'animepomodoro',
+    title: 'Anime Pomodoro Timer',
+    description:
+      'Anime Pomodoro Timer is an innovative app designed to blend the efficiency of the Pomodoro technique with the captivating world of anime. This unique productivity tool is perfect for anime enthusiasts who want to stay focused and manage their time effectively.',
     links: {
-      url: '#',
-      githubUrl: '',
-      imageUrl: '',
+      url: 'https://www.animepomodoro.com/',
+      githubUrl: 'https://github.com/ronnieima/animepomodoro',
+      imageUrl: animePomodoroUrl,
     },
 
-    imageAltText: '',
+    imageAltText: 'Anime Pomodoro Timer',
     className: 'md:col-span-2 animate-fade-left',
-    technologies: [],
+    technologies: [
+      'Next.js',
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Redux Toolkit',
+      'React Query',
+    ],
   },
   {
     id: '',
