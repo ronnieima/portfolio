@@ -1,23 +1,24 @@
-import React from 'react';
-import Image from 'next/image';
 import { notoSerif } from '@/utils/fonts';
-import Headshot from './Headshot';
 import { Metadata } from 'next';
+import Headshot from './Headshot';
 
 function AboutMePage() {
   return (
-    <main className="mx-auto flex max-w-screen-xl grid-cols-[0.5fr_1fr_1fr_0.5fr] flex-col justify-center gap-8 px-8 text-center md:grid md:gap-0 md:gap-x-2 md:gap-y-8 md:text-left">
+    <section
+      id="about-me"
+      className="mx-auto flex max-w-screen-xl grid-cols-[0.5fr_1fr_1fr_0.5fr] flex-col justify-center gap-8 px-8 text-center md:grid md:gap-0 md:gap-x-2 md:gap-y-8 md:text-left"
+    >
       <Headshot />
       <header className="flex animate-fade-right flex-col items-center justify-center gap-2 animate-duration-1000 md:items-start md:self-end">
-        <h1 className={`order-2 text-5xl sm:text-5xl ${notoSerif.className}`}>
+        <h3 className={`text-5xl sm:text-5xl ${notoSerif.className}`}>
+          <span className="text-lg sm:text-2xl">
+            it&apos;s nice to meet you, i&apos;m
+            <br />
+          </span>
           Ronnie Kaito <br />
           Imagawa,
-        </h1>
-        <h2 className="order-1 text-lg sm:text-2xl">
-          it&apos;s nice to meet you, i&apos;m
-        </h2>
-        <h3 className="order-3 text-lg sm:text-3xl">
-          full stack web developer.
+          <br />
+          <span className="text-lg sm:text-3xl">full stack web developer.</span>
         </h3>
       </header>
 
@@ -28,13 +29,8 @@ function AboutMePage() {
         turning ideas into digitized realities. Coding has developed into a fun
         hobby of mine, and I wish to transition this passion into a career.
       </p>
-    </main>
+    </section>
   );
 }
-
-export const metadata: Metadata = {
-  title: 'Ronnie Kaito Imagawa | About Me',
-  description: 'Meet Ronnie Kaito Imagawa.',
-};
 
 export default AboutMePage;

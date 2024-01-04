@@ -12,15 +12,15 @@ const links: LinkType[] = [
   },
   {
     label: 'meet ronnie kaito',
-    href: '/ronniekaito',
+    href: '#about-me',
   },
   {
     label: 'projects',
-    href: '/projects',
+    href: '#projects',
   },
   {
     label: 'contact',
-    href: '/contact',
+    href: '#contact',
   },
 ];
 

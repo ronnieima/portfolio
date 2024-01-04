@@ -5,6 +5,7 @@ import {
   animePomodoroUrl,
   calculatorUrl,
   portfolioImageUrl,
+  selfieBoothUrl,
 } from '@/utils/imageUrls';
 import Link from 'next/link';
 
@@ -83,15 +84,15 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: '',
-    title: '',
+    id: 'selfieboothguam',
+    title: 'Selfiebooth Guam Landing Page',
     description: '',
     links: {
-      url: '#',
+      url: 'https://www.selfieboothguam.com/',
       githubUrl: '',
-      imageUrl: '',
+      imageUrl: selfieBoothUrl,
     },
-    imageAltText: '',
+    imageAltText: 'selfieboothguam',
     className: 'animate-fade-up',
     technologies: [],
   },

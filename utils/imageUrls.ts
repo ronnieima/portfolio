@@ -16,3 +16,6 @@ export const calculatorUrl =
 
 export const animePomodoroUrl =
   'https://res.cloudinary.com/dfpbpun9z/image/upload/v1703807615/portfolio/Screenshot_2023-12-29_005220_lppin4.png';
+
+export const selfieBoothUrl =
+  'https://res.cloudinary.com/dfpbpun9z/image/upload/v1704107384/portfolio/selfiebooth.png';

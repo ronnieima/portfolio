@@ -1,13 +1,13 @@
 'use client';
 
-import { useParams } from 'next/navigation';
-import { projects } from '../ProjectsBentoBoxes';
-import Image from 'next/image';
-import { notoSerif } from '@/utils/fonts';
-import BadgeList from './BadgeList';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { notoSerif } from '@/utils/fonts';
 import { ArrowLeft } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
+import { projects } from '../../_components/(projects)/ProjectsBentoBoxes';
+import BadgeList from './BadgeList';
 
 function ProjectDetailPage() {
   const { projectId } = useParams();
@@ -18,7 +18,7 @@ function ProjectDetailPage() {
   }
   return (
     <main className="px-4 lg:mx-auto">
-      <Link href={'/projects'}>
+      <Link href={'/#projects'}>
         <Button className="flex gap-4">
           <ArrowLeft /> Back to projects
         </Button>

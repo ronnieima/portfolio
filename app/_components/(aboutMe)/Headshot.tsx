@@ -7,11 +7,11 @@ async function Headshot() {
   return (
     <div className="pointer-events-none relative col-start-2 flex animate-fade-left flex-col items-center justify-self-end  animate-duration-1000 md:self-end">
       <header className="relative">
-        <p
+        <h2
           className={`text-2xl tracking-widest ${notoSerif.className} mb-4 w-fit`}
         >
           ABOUT ME
-        </p>
+        </h2>
         <Image
           src={arrowUrl}
           alt="arrow"
