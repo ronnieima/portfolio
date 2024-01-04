@@ -5,31 +5,30 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
   <loc>https://www.imagawa.dev/</loc>
-  <lastmod>2023-12-06T21:32:31+00:00</lastmod>
+  <lastmod>2024-01-04T16:22:24+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.imagawa.dev/projects/portfolio</loc>
-  <lastmod>2023-12-06T21:32:31+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-01-04T16:22:24+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.imagawa.dev/projects/usafptcalculator</loc>
-  <lastmod>2023-12-06T21:32:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.imagawa.dev/projects/selfiebooth</loc>
-  <lastmod>2023-12-06T21:32:31+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-01-04T16:22:24+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.imagawa.dev/projects/animepomodoro</loc>
-  <lastmod>2023-12-06T21:32:31+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-01-04T16:22:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.imagawa.dev/projects/selfieboothguam</loc>
+  <lastmod>2024-01-04T16:22:24+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
