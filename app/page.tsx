@@ -5,7 +5,7 @@ import AboutMePage from './_components/(aboutMe)/AboutMePage';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center gap-48 py-16">
+    <main className="flex flex-col items-center justify-center gap-80 py-32">
       <Hero />
       <AboutMePage />
       <ProjectsPage />
