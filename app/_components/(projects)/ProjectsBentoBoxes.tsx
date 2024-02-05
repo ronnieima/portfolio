@@ -127,7 +127,7 @@ function ProjectsBentoBoxes() {
                   alt={project.imageAltText}
                   fill
                   style={{ objectFit: 'cover' }}
-                  className="-z-50 rounded-3xl p-2 transition-all duration-500 group-hover:blur-sm"
+                  className="-z-50 rounded-3xl p-2 transition-all duration-500 group-hover:opacity-40 group-hover:blur-sm"
                 />
               )}
             </Link>
