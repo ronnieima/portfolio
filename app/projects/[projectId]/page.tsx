@@ -1,17 +1,19 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import { notoSerif } from '@/utils/fonts';
 import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
 import { projects } from '../../_components/(projects)/ProjectsBentoBoxes';
 import BadgeList from './BadgeList';
 
-function ProjectDetailPage() {
-  const { projectId } = useParams();
-
+function ProjectDetailPage({
+  params,
+}: {
+  params: {
+    projectId: string;
+  };
+}) {
+  const projectId = params.projectId;
   const project = projects.find((p) => p.id === projectId);
   if (!project) {
     return <div>Project not found</div>;

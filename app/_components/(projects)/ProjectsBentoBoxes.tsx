@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: 'USAF Physical Training Fitness Exam Calculator',
     description: `A modern web app simplifying PT test score calculations for US Air
     Force service members. Built with Next.js, React.js, TypeScript,
-    TailwindCSS, and Supabase.`,
+    TailwindCSS.`,
 
     links: {
       url: 'https://www.usafptcalculator.com',
@@ -53,13 +53,7 @@ export const projects: Project[] = [
 
     imageAltText: 'My Portfolio Website',
     className: 'md:row-span-2 animate-fade-up',
-    technologies: [
-      'Next.js',
-      'React.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'Supabase',
-    ],
+    technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
     id: 'animepomodoro',
@@ -79,22 +73,23 @@ export const projects: Project[] = [
       'React.js',
       'TypeScript',
       'Tailwind CSS',
-      'Redux Toolkit',
-      'React Query',
+      'Zustand',
+      'MyAnimeList API',
     ],
   },
   {
     id: 'selfieboothguam',
     title: 'Selfiebooth Guam Landing Page',
-    description: '',
+    description:
+      "A multilingual landing page for my parents' photobooth business, based in Guam, my hometown.",
     links: {
       url: 'https://www.selfieboothguam.com/',
-      githubUrl: '',
+      githubUrl: 'https://github.com/ronnieima/selfieboothguam',
       imageUrl: selfieBoothUrl,
     },
     imageAltText: 'selfieboothguam',
     className: 'animate-fade-up',
-    technologies: [],
+    technologies: ['next-intl', 'Next.js', 'React.js', 'Tailwind CSS'],
   },
   {
     id: '',
@@ -131,8 +126,8 @@ function ProjectsBentoBoxes() {
                   src={project.links.imageUrl}
                   alt={project.imageAltText}
                   fill
-                  objectFit="cover"
-                  className="rounded-3xl p-2 transition-opacity duration-500 group-hover:opacity-0"
+                  style={{ objectFit: 'cover' }}
+                  className="-z-50 rounded-3xl p-2 transition-all duration-500 group-hover:blur-sm"
                 />
               )}
             </Link>
