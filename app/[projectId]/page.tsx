@@ -3,8 +3,9 @@ import { notoSerif } from '@/utils/fonts';
 import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { projects } from '../../_components/(projects)/ProjectsBentoBoxes';
+import { projects } from '../_components/(projects)/ProjectsBentoBoxes';
 import BadgeList from './BadgeList';
+import { notFound } from 'next/navigation';
 
 function ProjectDetailPage({
   params,
@@ -15,9 +16,8 @@ function ProjectDetailPage({
 }) {
   const projectId = params.projectId;
   const project = projects.find((p) => p.id === projectId);
-  if (!project) {
-    return <div>Project not found</div>;
-  }
+
+  if (!project) notFound();
   return (
     <main className="px-4 lg:mx-auto">
       <Link href={'/#projects'}>

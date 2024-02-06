@@ -115,7 +115,7 @@ function ProjectsBentoBoxes() {
             key={project.title!}
             className={`group relative ${project.className} animate-duration-[2000ms] `}
           >
-            <Link href={`/projects/${project.id}`}>
+            <Link href={`/${project.id}`}>
               <h2
                 className={` z-50  flex h-full items-center justify-center text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-5xl`}
               >
@@ -126,6 +126,7 @@ function ProjectsBentoBoxes() {
                   src={project.links.imageUrl}
                   alt={project.imageAltText}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover' }}
                   className="-z-50 rounded-3xl p-2 transition-all duration-500 group-hover:opacity-40 group-hover:blur-sm"
                 />
