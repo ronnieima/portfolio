@@ -8,22 +8,24 @@ import { ModeToggle } from './ui/ModeToggle';
 
 function NavBar() {
   return (
-    <nav className="flex animate-fade-down items-center justify-between gap-10 bg-transparent px-4 animate-duration-[2000ms] ">
-      <Link href="/" className="flex items-center gap-4">
-        <Crest size={30} />
-        <h2>ronnie kaito imagawa.</h2>
-      </Link>
+    <nav className="absolute top-0 z-10 w-full">
+      <div className="flex w-full animate-fade-down items-center justify-between gap-10 bg-transparent px-4 animate-duration-[2000ms]">
+        <Link href="/" className="flex items-center gap-4">
+          <Crest size={30} />
+          <h2>ronnie kaito imagawa.</h2>
+        </Link>
 
-      <ul className="hidden gap-16 lg:flex">
-        <NavLinks />
-      </ul>
-
-      <div className="flex gap-3 align-middle">
-        <ul className="hidden gap-2 lg:flex">
-          <SocialLinks />
+        <ul className="hidden gap-16 lg:flex">
+          <NavLinks />
         </ul>
-        <ModeToggle />
-        <MobileMenu />
+
+        <div className="flex gap-3 align-middle">
+          <ul className="hidden gap-2 lg:flex">
+            <SocialLinks />
+          </ul>
+          <ModeToggle />
+          <MobileMenu />
+        </div>
       </div>
     </nav>
   );
