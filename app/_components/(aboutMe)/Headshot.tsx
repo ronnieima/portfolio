@@ -2,11 +2,16 @@ import { notoSerif } from '@/utils/fonts';
 import { arrowUrl, guamFlagUrl, headshotUrl } from '@/utils/imageUrls';
 import Image from 'next/image';
 import React from 'react';
-import { AnimatedTooltip } from '../ui/AnimatedTooltip';
+import { MotionDiv } from '../MotionDiv';
 
 async function Headshot() {
   return (
-    <div className="pointer-events-none relative col-start-2 flex animate-fade-left flex-col items-center justify-self-end  animate-duration-1000 md:self-end">
+    <MotionDiv
+      initial={{ x: -100, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 100 }}
+      transition={{ duration: 1, ease: 'easeInOut' }}
+      className="pointer-events-none relative col-start-2 flex flex-col items-center justify-self-end  md:self-end"
+    >
       <header className="relative">
         <h2
           className={`text-2xl tracking-widest ${notoSerif.className} mb-4 w-fit`}
@@ -38,7 +43,7 @@ async function Headshot() {
         height={50}
         className="absolute bottom-0 right-0 w-2/5"
       />
-    </div>
+    </MotionDiv>
   );
 }
 

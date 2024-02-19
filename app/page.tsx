@@ -5,7 +5,7 @@ import AboutMeSection from './_components/(aboutMe)/AboutMeSection';
 
 export default function Home() {
   return (
-    <main className="relative space-y-[24rem]">
+    <main className="relative">
       <Hero />
       <AboutMeSection />
       <ProjectsPage />
