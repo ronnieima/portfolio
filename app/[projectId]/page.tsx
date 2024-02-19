@@ -26,7 +26,7 @@ function ProjectDetailPage({
         </Button>
       </Link>
 
-      <section className="flex flex-col items-center  py-8 lg:relative lg:mx-auto lg:grid lg:max-w-screen-xl lg:grid-cols-2 lg:gap-8">
+      <section className="flex flex-col items-center  py-8 lg:relative lg:mx-auto  lg:max-w-screen-xl lg:gap-8">
         <Image
           className=" w-full animate-fade-right animate-duration-1000"
           src={project.links.imageUrl}

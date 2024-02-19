@@ -52,7 +52,7 @@ export const projects: Project[] = [
     },
 
     imageAltText: 'My Portfolio Website',
-    className: 'md:row-span-2 animate-fade-up',
+    className: 'md: animate-fade-up ',
     technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
@@ -85,24 +85,12 @@ export const projects: Project[] = [
     links: {
       url: 'https://www.selfieboothguam.com/',
       githubUrl: 'https://github.com/ronnieima/selfieboothguam',
-      imageUrl: selfieBoothUrl,
+      imageUrl:
+        'https://res.cloudinary.com/dfpbpun9z/image/upload/v1704107384/portfolio/selfiebooth.png',
     },
     imageAltText: 'selfieboothguam',
-    className: 'animate-fade-up',
+    className: 'md:col-span-3',
     technologies: ['next-intl', 'Next.js', 'React.js', 'Tailwind CSS'],
-  },
-  {
-    id: '',
-    title: '',
-    description: '',
-    links: {
-      url: '#',
-      githubUrl: '',
-      imageUrl: '',
-    },
-    imageAltText: '',
-    className: 'animate-fade-left',
-    technologies: [],
   },
 ];
 
