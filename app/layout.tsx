@@ -29,7 +29,7 @@ export default function RootLayout({
         ></Script>
       </head>
       <body
-        className={`grid min-h-[100svh] grid-rows-[64px_1fr_64px] bg-background md:overflow-y-auto ${inter.className}`}
+        className={` bg-dot-black min-h-[100svh]  bg-background  ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           <NavBar />

@@ -12,7 +12,9 @@ function HeroSubtitle() {
       className="col-span-2 col-start-3 row-start-3 "
     >
       <h2 className={`${notoSerif.className} text-right text-5xl`}>
-        full stack web developer.
+        full stack web
+        <br />
+        developer.
       </h2>
     </MotionDiv>
   );

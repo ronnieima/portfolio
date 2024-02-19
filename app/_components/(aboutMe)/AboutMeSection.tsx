@@ -1,28 +1,27 @@
 import { notoSerif } from '@/utils/fonts';
 import { MotionDiv } from '../MotionDiv';
 import Headshot from './Headshot';
+import { AnimatedTooltip } from '../ui/AnimatedTooltip';
+import { headshotUrl } from '@/utils/imageUrls';
 
 function AboutMeSection() {
   return (
-    <MotionDiv
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, ease: 'easeInOut' }}
-      viewport={{ once: true }}
-    >
-      <section
-        id="about-me"
-        className="mx-auto flex max-w-screen-xl grid-cols-[0.5fr_1fr_1fr_0.5fr] flex-col justify-center gap-8 px-8 text-center md:grid md:gap-0 md:gap-x-2 md:gap-y-8 md:text-left"
-      >
+    <section id="about-me">
+      <div className="mx-auto flex max-w-screen-xl grid-cols-[0.5fr_1fr_1fr_0.5fr] flex-col justify-center gap-8 px-8 text-center md:grid md:gap-0 md:gap-x-2 md:gap-y-8 md:text-left">
         <Headshot />
+
         <header className="flex animate-fade-right flex-col items-center justify-center gap-2 animate-duration-1000 md:items-start md:self-end">
           <h3 className={`text-5xl sm:text-5xl ${notoSerif.className}`}>
             <span className="text-lg sm:text-2xl">
               it&apos;s nice to meet you, i&apos;m
               <br />
             </span>
-            Ronnie Kaito <br />
-            Imagawa,
+            <span className="bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text font-bold text-transparent">
+              Ronnie Kaito <br />
+            </span>
+            <span className="bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text font-bold text-transparent">
+              Imagawa,
+            </span>
             <br />
             <span className="text-lg sm:text-3xl">
               full stack web developer.
@@ -38,8 +37,8 @@ function AboutMeSection() {
           a fun hobby of mine, and I wish to transition this passion into a
           career.
         </p>
-      </section>
-    </MotionDiv>
+      </div>
+    </section>
   );
 }
 

@@ -2,6 +2,7 @@ import { notoSerif } from '@/utils/fonts';
 import { arrowUrl, guamFlagUrl, headshotUrl } from '@/utils/imageUrls';
 import Image from 'next/image';
 import React from 'react';
+import { AnimatedTooltip } from '../ui/AnimatedTooltip';
 
 async function Headshot() {
   return (
@@ -20,14 +21,16 @@ async function Headshot() {
           className="absolute -left-12 right-24 top-8 -rotate-12 invert-0 dark:invert"
         />
       </header>
+
       <Image
         src={headshotUrl}
         alt="My Headshot Photo"
         width={200}
         height={200}
         priority={true}
-        className=" mx-auto rounded-full sm:w-4/5"
+        className=" mx-auto rounded-full border-4 border-white sm:w-4/5"
       />
+
       <Image
         src={guamFlagUrl}
         alt="Flag of Guam"

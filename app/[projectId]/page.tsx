@@ -31,8 +31,8 @@ function ProjectDetailPage({
           className=" w-full animate-fade-right animate-duration-1000"
           src={project.links.imageUrl}
           alt={project.imageAltText}
-          width={500}
-          height={358}
+          width={1920}
+          height={1080}
         />
         <div className="flex animate-fade-left flex-col gap-8 py-8 text-center animate-duration-1000 lg:col-start-2 lg:row-start-1 lg:flex lg:flex-col lg:gap-8 lg:text-left">
           <h1 className={`${notoSerif.className} text-4xl  lg:text-5xl`}>
