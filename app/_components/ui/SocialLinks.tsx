@@ -33,7 +33,7 @@ function SocialLinks() {
               as="div"
               network={social.network}
               bgColor="transparent"
-              className="invert hover:scale-110 dark:invert-0"
+              className="invert transition-all hover:scale-110 dark:invert-0"
             />
           </Link>
         </li>
