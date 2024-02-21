@@ -19,20 +19,19 @@ function ProjectDetailPage({
 
   if (!project) notFound();
   return (
-    <main className="px-4 lg:mx-auto">
-      <Link href={'/#projects'}>
-        <Button className="flex gap-4">
-          <ArrowLeft /> Back to projects
-        </Button>
-      </Link>
-
-      <section className="flex flex-col items-center  py-8 lg:relative lg:mx-auto  lg:max-w-screen-xl lg:gap-8">
+    <main className="px-4  py-24 lg:mx-auto">
+      <section className="flex flex-col items-center gap-4  lg:relative lg:mx-auto  lg:max-w-screen-xl lg:gap-8">
+        <Link href={'/#projects'} className="self-start">
+          <Button className="flex gap-4 justify-self-start">
+            <ArrowLeft /> Back to projects
+          </Button>
+        </Link>
         <Image
-          className=" w-full animate-fade-right animate-duration-1000"
+          className="animate-fade-right animate-duration-1000"
           src={project.links.imageUrl}
           alt={project.imageAltText}
-          width={1920}
-          height={1080}
+          width={600}
+          height={400}
         />
         <div className="flex animate-fade-left flex-col gap-8 py-8 text-center animate-duration-1000 lg:col-start-2 lg:row-start-1 lg:flex lg:flex-col lg:gap-8 lg:text-left">
           <h1 className={`${notoSerif.className} text-4xl  lg:text-5xl`}>

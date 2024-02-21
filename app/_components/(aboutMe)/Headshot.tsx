@@ -8,6 +8,7 @@ async function Headshot() {
   return (
     <MotionDiv
       initial={{ x: -100, opacity: 0 }}
+      viewport={{ once: true }}
       whileInView={{ x: 0, opacity: 100 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
       className="pointer-events-none relative col-start-2 flex flex-col items-center justify-self-end  md:self-end"
