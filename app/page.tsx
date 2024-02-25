@@ -5,7 +5,7 @@ import AboutMeSection from './_components/(aboutMe)/AboutMeSection';
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col gap-8 py-16">
+    <main className="relative ">
       <Hero />
       <AboutMeSection />
       <ProjectsPage />

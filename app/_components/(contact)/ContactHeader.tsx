@@ -3,7 +3,7 @@ import React from 'react';
 
 function ContactHeader() {
   return (
-    <header className={`space-y-4 py-8 text-center`}>
+    <header id="contact" className={`space-y-4 py-8 text-center`}>
       <h2 className={`${notoSerif.className}  text-6xl`}>
         Let&apos;s connect!
       </h2>

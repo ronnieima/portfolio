@@ -19,13 +19,18 @@ function ProjectDetailPage({
 
   if (!project) notFound();
   return (
-    <main className="px-4  py-24 lg:mx-auto">
+    <main className="max-w-3xl  px-4 py-32 lg:mx-auto">
       <section className="flex flex-col items-center gap-4  lg:relative lg:mx-auto  lg:max-w-screen-xl lg:gap-8">
         <Link href={'/#projects'} className="self-start">
-          <Button className="flex gap-4 justify-self-start">
+          <Button className="flex gap-4 justify-self-start lg:-translate-x-24">
             <ArrowLeft /> Back to projects
           </Button>
         </Link>
+        <h1
+          className={`${notoSerif.className} text-center  text-4xl lg:text-5xl`}
+        >
+          {project.title}
+        </h1>
         <Image
           className="animate-fade-right animate-duration-1000"
           src={project.links.imageUrl}
@@ -35,10 +40,7 @@ function ProjectDetailPage({
         />
 
         <div className="flex animate-fade-left flex-col gap-8 py-8 text-center animate-duration-1000 lg:col-start-2 lg:row-start-1 lg:flex lg:flex-col lg:gap-8 lg:text-left">
-          <h1 className={`${notoSerif.className} text-4xl  lg:text-5xl`}>
-            {project.title}
-          </h1>
-          <div className="flex flex-col gap-4 lg:flex-row">
+          <div className="flex flex-col justify-center gap-4 lg:flex-row lg:justify-start">
             <Link href={project.links.url} target="_blank">
               <Button>Visit the website</Button>
             </Link>
@@ -47,12 +49,15 @@ function ProjectDetailPage({
             </Link>
           </div>
           {project.technologies && (
-            <div className="mx-auto lg:mx-0 lg:self-start">
+            <div className="space-y-2 ">
+              <h2 className="font-semibold">Technologies</h2>
               <BadgeList technologies={project.technologies} />
             </div>
           )}
-
-          <p>{project.description}</p>
+          <div className="space-y-2">
+            <h2 className="font-semibold">Description</h2>
+            <p>{project.description}</p>
+          </div>
         </div>
       </section>
     </main>

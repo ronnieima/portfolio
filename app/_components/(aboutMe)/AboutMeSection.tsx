@@ -4,8 +4,8 @@ import { MotionDiv, MotionP } from '../MotionDiv';
 
 function AboutMeSection() {
   return (
-    <section className=" relative overflow-x-hidden">
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+    <section className=" relative overflow-x-hidden py-[8rem]">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)] dark:bg-black"></div>
 
       <div
         id="about-me"
@@ -18,24 +18,20 @@ function AboutMeSection() {
           whileInView={{ x: 0, opacity: 100 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
-          className="-z-10 flex flex-col items-center justify-center gap-2  md:items-start md:self-end"
+          className="-z-10 flex flex-col items-center justify-center gap-2  md:items-start"
         >
-          <h3 className={`text-5xl sm:text-5xl ${notoSerif.className}`}>
+          <span className={`text-5xl sm:text-5xl ${notoSerif.className}`}>
             <span className="text-lg sm:text-2xl">
               it&apos;s nice to meet you, i&apos;m
               <br />
             </span>
-            <span className="bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text font-bold text-transparent">
+            <span className="bg-gradient-to-r from-sky-300 to-indigo-400 bg-clip-text font-bold text-transparent">
               Ronnie Kaito <br />
             </span>
-            <span className="bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text font-bold text-transparent">
-              Imagawa,
+            <span className="bg-gradient-to-r from-sky-300 to-indigo-400 bg-clip-text font-bold text-transparent">
+              Imagawa.
             </span>
-            <br />
-            <span className="text-lg sm:text-3xl">
-              full stack web developer.
-            </span>
-          </h3>
+          </span>
         </MotionDiv>
 
         <MotionP
@@ -43,13 +39,11 @@ function AboutMeSection() {
           whileInView={{ y: 0, opacity: 100 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
           viewport={{ once: true }}
-          className="-z-10 col-span-2 col-start-2  mb-16 self-start text-lg  sm:mb-0 sm:text-lg"
+          className="prose text-w -z-10  col-span-2 col-start-2 mb-16 self-start  text-center text-lg text-foreground sm:mb-0 sm:text-lg"
         >
-          I am an active duty Air Force IT technician stationed in Ramstein,
-          Germany with 3 years of experience. As a recent Computer Science
-          graduate born and raised from the beautiful, tiny island of Guam, I
-          love turning ideas into digitized realities. Coding has developed into
-          a fun hobby of mine, and I wish to transition this passion into a
+          I am a full stack software developer from Dededo, Guam who loves
+          turning ideas into digitized realities. Coding has developed into a
+          fun hobby of mine, and I wish to transition this passion into a
           career.
         </MotionP>
       </div>
