@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth ">
       <head>
         <Script
           async
@@ -29,7 +29,7 @@ export default function RootLayout({
         ></Script>
       </head>
       <body
-        className={`dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative   min-h-[100svh] bg-background bg-white  dark:bg-black  ${inter.className}`}
+        className={`relative min-h-[100svh] overflow-x-hidden bg-background   bg-white bg-dot-black/[0.2] dark:bg-black  dark:bg-dot-white/[0.2]  ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           <NavBar />

@@ -4,7 +4,7 @@ import { MotionDiv, MotionP } from '../MotionDiv';
 
 function AboutMeSection() {
   return (
-    <section className=" relative">
+    <section className=" relative overflow-x-hidden">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
 
       <div
@@ -17,6 +17,7 @@ function AboutMeSection() {
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 100 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
+          viewport={{ once: true }}
           className="-z-10 flex flex-col items-center justify-center gap-2  md:items-start md:self-end"
         >
           <h3 className={`text-5xl sm:text-5xl ${notoSerif.className}`}>
@@ -41,6 +42,7 @@ function AboutMeSection() {
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 100 }}
           transition={{ duration: 1, ease: 'easeInOut' }}
+          viewport={{ once: true }}
           className="-z-10 col-span-2 col-start-2  mb-16 self-start text-lg  sm:mb-0 sm:text-lg"
         >
           I am an active duty Air Force IT technician stationed in Ramstein,
