@@ -5,9 +5,7 @@ import SocialLinks from './ui/SocialLinks';
 function Footer() {
   return (
     <footer className=" absolute bottom-0 w-full pb-4">
-      <div className="flex list-none items-center justify-center">
-        <SocialLinks />
-      </div>
+      <SocialLinks />
       <div className="mx-auto max-w-screen-lg animate-fade-up grid-cols-8 px-4 pb-1 text-center  animate-duration-[2000ms]">
         <p className="text-xs text-muted-foreground">
           Coded in{' '}

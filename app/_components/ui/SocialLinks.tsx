@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons/component';
@@ -23,9 +24,9 @@ const socials: SocialType[] = [
     url: 'https://github.com/ronnieima',
   },
 ];
-function SocialLinks() {
+function SocialLinks({ className }: { className?: string }) {
   return (
-    <>
+    <ul className={cn('flex list-none items-center justify-center', className)}>
       {socials.map((social) => (
         <li key={social.url}>
           <Link href={social.url} target="_blank">
@@ -38,7 +39,7 @@ function SocialLinks() {
           </Link>
         </li>
       ))}
-    </>
+    </ul>
   );
 }
 

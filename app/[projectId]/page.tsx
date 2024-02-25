@@ -19,7 +19,7 @@ function ProjectDetailPage({
 
   if (!project) notFound();
   return (
-    <main className="px-4 lg:mx-auto">
+    <main className="px-4 py-[4rem] lg:mx-auto">
       <Link href={'/#projects'}>
         <Button className="flex gap-4">
           <ArrowLeft /> Back to projects
@@ -34,16 +34,11 @@ function ProjectDetailPage({
           width={1920}
           height={1080}
         />
+
         <div className="flex animate-fade-left flex-col gap-8 py-8 text-center animate-duration-1000 lg:col-start-2 lg:row-start-1 lg:flex lg:flex-col lg:gap-8 lg:text-left">
           <h1 className={`${notoSerif.className} text-4xl  lg:text-5xl`}>
             {project.title}
           </h1>
-          {project.technologies && (
-            <div className="mx-auto lg:mx-0 lg:self-start">
-              <BadgeList technologies={project.technologies} />
-            </div>
-          )}
-          <p>{project.description}</p>
           <div className="flex flex-col gap-4 lg:flex-row">
             <Link href={project.links.url} target="_blank">
               <Button>Visit the website</Button>
@@ -52,6 +47,13 @@ function ProjectDetailPage({
               <Button>View the GitHub repository</Button>
             </Link>
           </div>
+          {project.technologies && (
+            <div className="mx-auto lg:mx-0 lg:self-start">
+              <BadgeList technologies={project.technologies} />
+            </div>
+          )}
+
+          <p>{project.description}</p>
         </div>
       </section>
     </main>

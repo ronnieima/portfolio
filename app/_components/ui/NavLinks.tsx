@@ -37,7 +37,6 @@ function NavLinks({ mobile }: { mobile?: boolean }) {
         <li
           key={link.label}
           className={`
-          ${currentPath === link.href && 'text-secondary'} 
           ${mobile ? mobileStyles : desktopStyles}
           `}
         >
