@@ -26,7 +26,6 @@ function AboutMeSection() {
             has developed into a fun hobby of mine, and I wish to transition
             this passion into a career.
           </p>
-          <Button>Meet Ronnie Kaito</Button>
         </div>
       </MaxWidthWrapper>
     </section>
