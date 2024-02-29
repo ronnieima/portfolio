@@ -25,7 +25,7 @@ const links: LinkType[] = [
 ];
 
 const mobileStyles =
-  'hover:opacity-80  rounded-lg text-center text-xl lg:text-4xl px-6 py-2';
+  'hover:opacity-80  rounded-lg text-center text-xl sm:text-lg lg:text-4xl px-6 py-2';
 
 const desktopStyles = 'hover:text-secondary';
 
@@ -41,7 +41,7 @@ function NavLinks({ mobile }: { mobile?: boolean }) {
           `}
         >
           <Link href={link.href}>
-            <span className="text-sm">0{i + 1}</span> &#47;&#47; {link.label}
+            <span className="text-xs">0{i + 1}</span> &#47;&#47; {link.label}
           </Link>
         </li>
       ))}

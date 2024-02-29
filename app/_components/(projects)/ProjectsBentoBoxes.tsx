@@ -26,21 +26,8 @@ export type Project = {
 // might have to migrate this to an actual database to scale more
 export const projects: Project[] = [
   {
-    id: 'portfolio',
-    title: 'Portfolio Website',
-    description: '',
-    links: {
-      url: 'https://www.imagawa.dev',
-      githubUrl: 'https://github.com/ronnieima/portfolio',
-      imageUrl: portfolioImageUrl,
-    },
-    imageAltText: 'My Portfolio Website',
-    className: 'col-span-full animate-fade-right',
-    technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
-  },
-  {
     id: 'usafptcalculator',
-    title: 'USAF Physical Training Fitness Exam Calculator',
+    title: 'USAF PT Fitness Exam Calculator',
     description: `A modern web app simplifying PT test score calculations for US Air
     Force service members. Built with Next.js, React.js, TypeScript,
     TailwindCSS.`,
@@ -52,8 +39,37 @@ export const projects: Project[] = [
     },
 
     imageAltText: 'My Portfolio Website',
+    className: 'col-span-full animate-fade-right',
+
+    technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
+  },
+  {
+    id: 'portfolio',
+    title: 'Portfolio Website',
+    description: '',
+    links: {
+      url: 'https://www.imagawa.dev',
+      githubUrl: 'https://github.com/ronnieima/portfolio',
+      imageUrl: portfolioImageUrl,
+    },
+    imageAltText: 'My Portfolio Website',
     className: 'md:row-span-2 animate-fade-up',
     technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
+  },
+  {
+    id: 'selfieboothguam',
+    title: 'Selfiebooth Guam Landing Page',
+    description:
+      "A multilingual landing page for my parents' photobooth business, based in Guam, my hometown.",
+    links: {
+      url: 'https://www.selfieboothguam.com/',
+      githubUrl: 'https://github.com/ronnieima/selfieboothguam',
+      imageUrl: selfieBoothUrl,
+    },
+    imageAltText: 'selfieboothguam',
+    className: 'md:col-span-2 animate-fade-left',
+
+    technologies: ['next-intl', 'Next.js', 'React.js', 'Tailwind CSS'],
   },
   {
     id: 'animepomodoro',
@@ -67,7 +83,7 @@ export const projects: Project[] = [
     },
 
     imageAltText: 'Anime Pomodoro Timer',
-    className: 'md:col-span-2 animate-fade-left',
+    className: 'animate-fade-up',
     technologies: [
       'Next.js',
       'React.js',
@@ -76,20 +92,6 @@ export const projects: Project[] = [
       'Zustand',
       'MyAnimeList API',
     ],
-  },
-  {
-    id: 'selfieboothguam',
-    title: 'Selfiebooth Guam Landing Page',
-    description:
-      "A multilingual landing page for my parents' photobooth business, based in Guam, my hometown.",
-    links: {
-      url: 'https://www.selfieboothguam.com/',
-      githubUrl: 'https://github.com/ronnieima/selfieboothguam',
-      imageUrl: selfieBoothUrl,
-    },
-    imageAltText: 'selfieboothguam',
-    className: 'animate-fade-up',
-    technologies: ['next-intl', 'Next.js', 'React.js', 'Tailwind CSS'],
   },
   {
     id: '',
@@ -115,23 +117,22 @@ function ProjectsBentoBoxes() {
             key={project.title!}
             className={`group relative ${project.className} animate-duration-[2000ms] `}
           >
-            <Link href={`/${project.id}`}>
-              <h2
-                className={` z-50  flex h-full items-center justify-center text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-5xl`}
-              >
-                {project.title}
-              </h2>
-              {project.links.imageUrl && project.imageAltText && (
-                <Image
-                  src={project.links.imageUrl}
-                  alt={project.imageAltText}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{ objectFit: 'cover' }}
-                  className="-z-50 rounded-3xl p-2 transition-all duration-500 group-hover:opacity-40 group-hover:blur-sm"
-                />
-              )}
+            <Link
+              href={`/${project.id}`}
+              className={` z-50  flex h-full items-center justify-center p-8 text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-4xl`}
+            >
+              {project.title}
             </Link>
+            {project.links.imageUrl && project.imageAltText && (
+              <Image
+                src={project.links.imageUrl}
+                alt={project.imageAltText}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                style={{ objectFit: 'cover' }}
+                className="absolute -z-10 rounded-3xl p-2 transition-all duration-500 group-hover:opacity-40 group-hover:blur-sm"
+              />
+            )}
           </BentoBox>
         );
       })}
