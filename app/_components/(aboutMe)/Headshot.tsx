@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 async function Headshot() {
   return (
-    <div className="pointer-events-none relative col-start-2 flex flex-col items-center justify-self-end  md:self-end">
+    <div className="pointer-events-none relative flex flex-col items-center justify-self-end  ">
       {/* <header className="relative">
         <h2
           className={`text-2xl tracking-widest ${notoSerif.className} mb-4 w-fit`}
@@ -25,7 +25,7 @@ async function Headshot() {
         width={400}
         height={300}
         priority={true}
-        className=" mx-auto rounded-3xl  sm:w-4/5"
+        className=" mx-auto w-3/5 rounded-3xl lg:w-4/5"
       />
 
       <Image
@@ -33,7 +33,7 @@ async function Headshot() {
         alt="Flag of Guam"
         width={100}
         height={50}
-        className="absolute bottom-0 right-0 w-2/5"
+        className="absolute -bottom-2 right-14 w-1/5 lg:bottom-0 lg:right-0 lg:w-2/5"
       />
     </div>
   );

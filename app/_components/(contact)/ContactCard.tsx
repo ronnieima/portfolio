@@ -47,7 +47,7 @@ function ContactCard() {
   }
 
   return (
-    <Card>
+    <Card className="bg-primary">
       <CardHeader>
         <CardTitle>Send a message</CardTitle>
       </CardHeader>
@@ -55,7 +55,7 @@ function ContactCard() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="w-full space-y-8"
+            className="flex w-full flex-col space-y-8"
           >
             <FormField
               control={form.control}
@@ -103,7 +103,13 @@ function ContactCard() {
                 </FormItem>
               )}
             />
-            <Button type="submit">Submit</Button>
+            <Button
+              type="submit"
+              className="self-end text-black"
+              variant={'secondary'}
+            >
+              Submit
+            </Button>
           </form>
         </Form>
       </CardContent>

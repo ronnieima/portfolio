@@ -15,7 +15,7 @@ function NavBar() {
           <h2>ronnie kaito imagawa.</h2>
         </Link>
 
-        <ul className="hidden gap-16 lg:flex">
+        <ul className="hidden md:gap-5 lg:flex xl:gap-16">
           <NavLinks />
         </ul>
 
