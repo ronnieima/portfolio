@@ -49,7 +49,7 @@ function ContactCard() {
   return (
     <Card className="bg-primary">
       <CardHeader>
-        <CardTitle>Send a message</CardTitle>
+        <CardTitle className="text-white">Send a message</CardTitle>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -62,7 +62,7 @@ function ContactCard() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
+                  <FormLabel className="text-white">Full Name</FormLabel>
                   <FormControl>
                     <Input placeholder="Ronnie Kaito Imagawa" {...field} />
                   </FormControl>
@@ -76,9 +76,13 @@ function ContactCard() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email Address</FormLabel>
+                  <FormLabel className="text-white">Email Address</FormLabel>
                   <FormControl>
-                    <Input placeholder="ronniekaito@imagawa.dev" {...field} />
+                    <Input
+                      type="email"
+                      placeholder="ronniekaito@imagawa.dev"
+                      {...field}
+                    />
                   </FormControl>
 
                   <FormMessage />
@@ -90,7 +94,7 @@ function ContactCard() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message</FormLabel>
+                  <FormLabel className="text-white">Message</FormLabel>
                   <FormControl>
                     <Textarea
                       className="h-32 resize-none"
@@ -105,7 +109,7 @@ function ContactCard() {
             />
             <Button
               type="submit"
-              className="self-end text-black"
+              className="self-end text-black hover:bg-yellow-300"
               variant={'secondary'}
             >
               Submit

@@ -5,7 +5,7 @@ import SectionHeader from '../SectionHeader';
 
 function AboutMeSection() {
   return (
-    <section className=" relative overflow-x-hidden py-24">
+    <section id="about-me" className=" relative overflow-x-hidden py-24">
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)] dark:bg-black"></div>
 
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-8 px-16 lg:flex-row">
@@ -16,7 +16,6 @@ function AboutMeSection() {
             header="About Me"
             subtitle="A dedicated full stack developer who turns ideas into digitized
               realities."
-            id="about-me"
           />
           <p className="prose mb-16 text-left text-lg text-muted-foreground sm:mb-0 sm:text-lg lg:pr-48">
             I am an active duty service member from Dededo, Guam who loves

@@ -3,7 +3,7 @@ import { notoSerif } from '@/utils/fonts';
 import React from 'react';
 
 type SectionHeaderType = {
-  id: string;
+  id?: string;
   header: string;
   subtitle?: string;
   className?: string;
