@@ -1,19 +1,10 @@
-import { notoSerif } from '@/utils/fonts';
-import { arrowUrl, guamFlagUrl, headshotUrl } from '@/utils/imageUrls';
+import { guamFlagUrl, headshotUrl } from '@/utils/imageUrls';
 import Image from 'next/image';
-import React from 'react';
-import { MotionDiv } from '../MotionDiv';
 
 async function Headshot() {
   return (
-    <MotionDiv
-      initial={{ x: -100, opacity: 0 }}
-      viewport={{ once: true }}
-      whileInView={{ x: 0, opacity: 100 }}
-      transition={{ duration: 1, ease: 'easeInOut' }}
-      className="pointer-events-none relative col-start-2 flex flex-col items-center justify-self-end  md:self-end"
-    >
-      <header className="relative">
+    <div className="pointer-events-none relative col-start-2 flex flex-col items-center justify-self-end  md:self-end">
+      {/* <header className="relative">
         <h2
           className={`text-2xl tracking-widest ${notoSerif.className} mb-4 w-fit`}
         >
@@ -26,15 +17,15 @@ async function Headshot() {
           height={40}
           className="absolute -left-12 right-24 top-8 -rotate-12 invert-0 dark:invert"
         />
-      </header>
+      </header> */}
 
       <Image
         src={headshotUrl}
         alt="My Headshot Photo"
-        width={200}
-        height={200}
+        width={400}
+        height={300}
         priority={true}
-        className=" mx-auto rounded-full border-4 border-white sm:w-4/5"
+        className=" mx-auto rounded-3xl  sm:w-4/5"
       />
 
       <Image
@@ -44,7 +35,7 @@ async function Headshot() {
         height={50}
         className="absolute bottom-0 right-0 w-2/5"
       />
-    </MotionDiv>
+    </div>
   );
 }
 
