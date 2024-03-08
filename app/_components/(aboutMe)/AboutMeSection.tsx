@@ -13,7 +13,7 @@ function AboutMeSection() {
 
         <div className="flex h-full flex-col items-start justify-start gap-6">
           <SectionHeader
-            header="About Me"
+            header="Who is Ronnie Kaito Imagawa?"
             subtitle="A dedicated full stack developer who turns ideas into digitized
               realities."
           />
@@ -30,28 +30,3 @@ function AboutMeSection() {
 }
 
 export default AboutMeSection;
-
-{
-  /* <div className="flex items-center justify-center gap-4">
-  <MotionDiv
-    initial={{ x: 100, opacity: 0 }}
-    whileInView={{ x: 0, opacity: 100 }}
-    transition={{ duration: 1, ease: 'easeInOut' }}
-    viewport={{ once: true }}
-    className="flex flex-col items-start justify-center gap-2 text-left  md:items-start"
-  >
-    <span className={`text-5xl sm:text-5xl ${notoSerif.className}`}>
-      <span className="text-lg sm:text-2xl">
-        it&apos;s nice to meet you, i&apos;m
-        <br />
-      </span>
-      <span className="bg-gradient-to-r from-sky-300 to-indigo-400 bg-clip-text font-bold text-transparent">
-        Ronnie Kaito <br />
-      </span>
-      <span className="bg-gradient-to-r from-sky-300 to-indigo-400 bg-clip-text font-bold text-transparent">
-        Imagawa.
-      </span>
-    </span>
-  </MotionDiv>
-</div> */
-}

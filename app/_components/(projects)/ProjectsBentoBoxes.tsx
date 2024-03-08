@@ -85,11 +85,13 @@ export const projects: Project[] = [
     imageAltText: 'Anime Pomodoro Timer',
     className: 'animate-fade-up',
     technologies: [
+      'PostgreSQL',
+      'Drizzle ORM',
+      'Zustand',
       'Next.js',
       'React.js',
       'TypeScript',
       'Tailwind CSS',
-      'Zustand',
       'MyAnimeList API',
     ],
   },
@@ -112,7 +114,6 @@ function ProjectsBentoBoxes() {
   return (
     <section className="my-4 grid h-full w-full auto-rows-[200px] grid-cols-1 gap-4 px-4  md:mx-auto md:my-8 md:max-w-5xl md:grid-cols-3 md:grid-rows-3">
       {projects.map((project) => {
-        console.log({ project });
         return (
           <BentoBox
             key={project.title!}
