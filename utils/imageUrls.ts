@@ -19,3 +19,6 @@ export const animePomodoroUrl =
 
 export const selfieBoothUrl =
   'https://res.cloudinary.com/dfpbpun9z/image/upload/v1704107384/portfolio/selfiebooth.png';
+
+export const spaceTourismUrl =
+  'https://res.cloudinary.com/dfpbpun9z/image/upload/v1709930697/portfolio/757afc0c-fcc8-40ad-bcf2-27eaa7645f2e.png';

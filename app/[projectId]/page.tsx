@@ -3,9 +3,9 @@ import { notoSerif } from '@/utils/fonts';
 import { ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { projects } from '../_components/(projects)/ProjectsBentoBoxes';
 import BadgeList from './BadgeList';
 import { notFound } from 'next/navigation';
+import { projects } from '@/config/content';
 
 function ProjectDetailPage({
   params,
