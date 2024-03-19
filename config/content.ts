@@ -89,3 +89,38 @@ export const projects: Project[] = [
     technologies: ['React.js', 'Vite', 'Tanstack Router', 'TailwindCSS'],
   },
 ];
+
+export const icons = {
+  front_end: [
+    { icon: 'devicon-react-original colored', label: 'React' },
+    {
+      icon: 'devicon-javascript-plain colored',
+      label: 'JavaScript',
+    },
+    {
+      icon: 'devicon-typescript-plain colored',
+      label: 'TypeScript',
+    },
+    { icon: 'devicon-nextjs-plain colored', label: 'Next.js' },
+    { icon: 'devicon-html5-plain colored', label: 'HTML' },
+    { icon: 'devicon-css3-plain colored', label: 'CSS' },
+    {
+      icon: 'devicon-tailwindcss-plain-wordmark colored',
+      label: 'TailwindCSS',
+    },
+  ],
+  back_end: [
+    {
+      icon: 'devicon-nodejs-plain-wordmark colored',
+      label: 'Node.js',
+    },
+    {
+      icon: 'devicon-express-original-wordmark colored',
+      label: 'Express.js',
+    },
+    {
+      icon: 'devicon-postgresql-plain-wordmark colored',
+      label: 'PostgreSQL',
+    },
+  ],
+};

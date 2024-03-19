@@ -23,7 +23,6 @@ function NavBar() {
           <ul className="hidden gap-2 lg:flex">
             <SocialLinks />
           </ul>
-          <ModeToggle />
           <MobileMenu />
         </div>
       </div>

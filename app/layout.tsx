@@ -27,6 +27,10 @@ export default function RootLayout({
           src="https://umami-fork-murex.vercel.app/script.js"
           data-website-id="2191e900-8f64-48a8-ad5d-f66a95d7933d"
         ></Script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
       </head>
       <body
         className={`relative min-h-[100svh] overflow-x-hidden bg-background   bg-white bg-dot-black/[0.2] dark:bg-black  dark:bg-dot-white/[0.2]  ${inter.className}`}
