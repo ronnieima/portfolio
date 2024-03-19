@@ -1,4 +1,4 @@
-import MaxWidthWrapper from '../MaxWidthWrapper';
+import MaxWidthWrapper from '../MaxWidthContainer';
 import Headshot from './Headshot';
 
 import SectionHeader from '../SectionHeader';

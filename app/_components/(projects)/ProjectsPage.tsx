@@ -1,4 +1,4 @@
-import MaxWidthWrapper from '../MaxWidthWrapper';
+import MaxWidthWrapper from '../MaxWidthContainer';
 import SectionHeader from '../SectionHeader';
 import ProjectsBentoBoxes from './ProjectsBentoBoxes';
 

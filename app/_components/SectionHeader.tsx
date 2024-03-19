@@ -25,7 +25,9 @@ export default function SectionHeader({
       >
         {header}
       </h2>
-      {subtitle && <p className=" text-3xl font-extrabold">{subtitle}</p>}
+      {subtitle && (
+        <p className=" max-w-lg text-3xl font-extrabold">{subtitle}</p>
+      )}
     </header>
   );
 }
