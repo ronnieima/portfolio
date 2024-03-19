@@ -4,7 +4,7 @@ import SkillCard from './SkillCard';
 
 export default function SkillsSection() {
   return (
-    <section className="bg-dots-gray-50 w-full py-16">
+    <section className="w-full py-16">
       <MaxWidthWrapper>
         <SectionHeader
           header="My Skills"

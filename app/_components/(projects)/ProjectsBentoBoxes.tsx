@@ -39,7 +39,7 @@ export const projects: Project[] = [
     },
 
     imageAltText: 'My Portfolio Website',
-    className: 'col-span-full animate-fade-right',
+    className: 'col-span-full ',
 
     technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       imageUrl: portfolioImageUrl,
     },
     imageAltText: 'My Portfolio Website',
-    className: 'md:row-span-2 animate-fade-up',
+    className: 'md:row-span-2 ',
     technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
@@ -67,7 +67,7 @@ export const projects: Project[] = [
       imageUrl: selfieBoothUrl,
     },
     imageAltText: 'selfieboothguam',
-    className: 'md:col-span-2 animate-fade-left',
+    className: 'md:col-span-2',
 
     technologies: ['next-intl', 'Next.js', 'React.js', 'Tailwind CSS'],
   },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     },
 
     imageAltText: 'Anime Pomodoro Timer',
-    className: 'animate-fade-up',
+    className: '',
     technologies: [
       'PostgreSQL',
       'Drizzle ORM',
@@ -105,7 +105,7 @@ export const projects: Project[] = [
       imageUrl: spaceTourismUrl,
     },
     imageAltText: 'Space Tourism Page',
-    className: 'animate-fade-left',
+    className: '',
     technologies: ['React.js', 'Vite', 'Tanstack Router', 'TailwindCSS'],
   },
 ];
@@ -118,13 +118,13 @@ function ProjectsBentoBoxes() {
           <BentoBox
             key={project.title!}
             className={cn(
-              `group relative animate-duration-[2000ms] `,
+              `group relative animate-duration-[1000ms] `,
               project.className,
             )}
           >
             <Link
               href={`/${project.id}`}
-              className={` z-50  flex h-full items-center justify-center p-8 text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-4xl`}
+              className={`   flex h-full items-center justify-center p-8 text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-4xl`}
             >
               {project.title}
             </Link>
@@ -135,7 +135,7 @@ function ProjectsBentoBoxes() {
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 style={{ objectFit: 'cover' }}
-                className="absolute -z-10 rounded-3xl p-2 transition-all duration-500 group-hover:opacity-40 group-hover:blur-sm"
+                className="absolute z-10 rounded-3xl p-2 transition-all duration-500 group-hover:cursor-pointer group-hover:opacity-40 group-hover:blur-sm"
               />
             )}
           </BentoBox>
