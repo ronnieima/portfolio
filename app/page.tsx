@@ -6,7 +6,7 @@ import SkillsSection from './_components/(skills)/SkillsSection';
 
 export default function Home() {
   return (
-    <main className="relative ">
+    <main className="relative space-y-32">
       <Hero />
       <SkillsSection />
       <AboutMeSection />

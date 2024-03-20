@@ -4,7 +4,7 @@ import ProjectsBentoBoxes from './ProjectsBentoBoxes';
 
 function ProjectsPage() {
   return (
-    <section id="projects" className=" relative  py-[8rem]">
+    <section id="projects" className=" relative bg-neutral-200/50 py-16">
       <MaxWidthWrapper className="">
         <SectionHeader
           header="Websites I Have Deployed"

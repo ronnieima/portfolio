@@ -5,9 +5,7 @@ import SectionHeader from '../SectionHeader';
 
 function AboutMeSection() {
   return (
-    <section id="about-me" className=" relative overflow-x-hidden py-24">
-      <div className="pointer-events-none absolute inset-0 hidden items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)] dark:bg-black sm:flex"></div>
-
+    <section id="about-me" className=" relative overflow-x-hidden ">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-8  lg:flex-row">
         <Headshot />
 

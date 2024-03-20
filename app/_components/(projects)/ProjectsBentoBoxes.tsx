@@ -115,30 +115,30 @@ function ProjectsBentoBoxes() {
     <section className="my-4 grid h-full w-full auto-rows-[200px] grid-cols-1 gap-4 px-4  md:mx-auto md:my-8 md:max-w-5xl md:grid-cols-3 md:grid-rows-3">
       {projects.map((project) => {
         return (
-          <BentoBox
-            key={project.title!}
-            className={cn(
-              `group relative animate-duration-[1000ms] `,
-              project.className,
-            )}
-          >
-            <Link
-              href={`/${project.id}`}
-              className={`   flex h-full items-center justify-center p-8 text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-4xl`}
+          <Link href={`/${project.id}`} key={project.title!} className="z-10">
+            <BentoBox
+              className={cn(
+                `group relative animate-duration-[1000ms] `,
+                project.className,
+              )}
             >
-              {project.title}
-            </Link>
-            {project.links.imageUrl && project.imageAltText && (
-              <Image
-                src={project.links.imageUrl}
-                alt={project.imageAltText}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{ objectFit: 'cover' }}
-                className="absolute z-10 rounded-3xl p-2 transition-all duration-500 group-hover:cursor-pointer group-hover:opacity-40 group-hover:blur-sm"
-              />
-            )}
-          </BentoBox>
+              <div
+                className={`  flex h-full items-center justify-center p-8 text-center text-2xl font-semibold tracking-wide text-foreground opacity-0 group-hover:animate-fade-up group-hover:opacity-100 sm:text-3xl md:text-4xl`}
+              >
+                {project.title}
+              </div>
+              {project.links.imageUrl && project.imageAltText && (
+                <Image
+                  src={project.links.imageUrl}
+                  alt={project.imageAltText}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover' }}
+                  className="absolute rounded-3xl p-2 transition-all duration-500 group-hover:cursor-pointer group-hover:opacity-40 group-hover:blur-sm"
+                />
+              )}
+            </BentoBox>
+          </Link>
         );
       })}
     </section>
