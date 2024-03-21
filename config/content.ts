@@ -4,6 +4,7 @@ import {
   portfolioImageUrl,
   selfieBoothUrl,
   animePomodoroUrl,
+  spaceTourismUrl,
 } from '@/utils/imageUrls';
 
 export const projects: Project[] = [
@@ -26,17 +27,24 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
   },
   {
-    id: 'portfolio',
-    title: 'Portfolio Website',
+    id: 'audiophile-ecommerce',
+    title: 'Audiophile Ecommerce',
     description: '',
     links: {
-      url: 'https://www.imagawa.dev',
-      githubUrl: 'https://github.com/ronnieima/portfolio',
+      url: 'https://audiophile-ecommerce-peach.vercel.app/',
+      githubUrl: 'https://github.com/ronnieima/audiophile-ecommerce',
       imageUrl: portfolioImageUrl,
     },
     imageAltText: 'My Portfolio Website',
     className: 'md:row-span-2 animate-fade-up',
-    technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS'],
+    technologies: [
+      'Next.js',
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'PostgreSQL',
+      'NextAuth',
+    ],
   },
   {
     id: 'selfieboothguam',
@@ -82,7 +90,7 @@ export const projects: Project[] = [
     links: {
       url: 'https://space-tourism-delta-blush.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/space-tourism',
-      imageUrl: '',
+      imageUrl: spaceTourismUrl,
     },
     imageAltText: 'Space Tourism Page',
     className: 'animate-fade-left',

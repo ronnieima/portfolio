@@ -1,5 +1,7 @@
+import { projects } from '@/config/content';
 import MaxWidthWrapper from '../MaxWidthContainer';
 import SectionHeader from '../SectionHeader';
+import Project from './Project';
 import ProjectsBentoBoxes from './ProjectsBentoBoxes';
 
 function ProjectsPage() {
@@ -10,7 +12,12 @@ function ProjectsPage() {
           header="Websites I Have Deployed"
           subtitle="Each project is a unique piece of development."
         />
-        <ProjectsBentoBoxes />
+        {/* <ProjectsBentoBoxes /> */}
+        <div className="space-y-32">
+          {projects.map((project) => (
+            <Project key={project.id} project={project} />
+          ))}
+        </div>
       </MaxWidthWrapper>
     </section>
   );
