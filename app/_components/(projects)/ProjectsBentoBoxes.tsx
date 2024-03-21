@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import BentoBox from './BentoBox';
 import { cn } from '@/lib/utils';
 import {
+  animePomodoroUrl,
   calculatorUrl,
   portfolioImageUrl,
   selfieBoothUrl,
-  animePomodoroUrl,
   spaceTourismUrl,
 } from '@/utils/imageUrls';
+import Image from 'next/image';
+import Link from 'next/link';
+import BentoBox from './BentoBox';
 
 export type Project = {
   id: string;
