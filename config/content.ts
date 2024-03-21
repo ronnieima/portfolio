@@ -1,11 +1,5 @@
 import { Project } from '@/app/_components/(projects)/ProjectsBentoBoxes';
-import {
-  calculatorUrl,
-  portfolioImageUrl,
-  selfieBoothUrl,
-  animePomodoroUrl,
-  spaceTourismUrl,
-} from '@/utils/imageUrls';
+import { cld } from '@/lib/utils';
 
 export const projects: Project[] = [
   {
@@ -18,7 +12,7 @@ export const projects: Project[] = [
     links: {
       url: 'https://www.usafptcalculator.com',
       githubUrl: 'https://github.com/ronnieima/usaf-pt-calculator',
-      imageUrl: calculatorUrl,
+      imageUrl: cld.image('portfolio/usafptcalculator_dd3hnp').toURL(),
     },
 
     imageAltText: 'My Portfolio Website',
@@ -29,11 +23,12 @@ export const projects: Project[] = [
   {
     id: 'audiophile-ecommerce',
     title: 'Audiophile Ecommerce',
-    description: '',
+    description:
+      'Audiophile is an ecommerce platform I developed for audio enthusiasts. It showcases my skills in web development, database management, and user experience design. With Audiophile, I aimed to create a seamless and intuitive shopping experience for customers interested in high-quality audio equipment.',
     links: {
       url: 'https://audiophile-ecommerce-peach.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/audiophile-ecommerce',
-      imageUrl: portfolioImageUrl,
+      imageUrl: cld.image('portfolio/audiophile-ecommerce').toURL(),
     },
     imageAltText: 'My Portfolio Website',
     className: 'md:row-span-2 animate-fade-up',
@@ -54,7 +49,7 @@ export const projects: Project[] = [
     links: {
       url: 'https://www.selfieboothguam.com/',
       githubUrl: 'https://github.com/ronnieima/selfieboothguam',
-      imageUrl: selfieBoothUrl,
+      imageUrl: cld.image('portfolio/selfiebooth').toURL(),
     },
     imageAltText: 'selfieboothguam',
     className: 'md:col-span-2 animate-fade-left',
@@ -69,7 +64,7 @@ export const projects: Project[] = [
     links: {
       url: 'https://www.animepomodoro.com/',
       githubUrl: 'https://github.com/ronnieima/animepomodoro',
-      imageUrl: animePomodoroUrl,
+      imageUrl: cld.image('portfolio/animepomodoro').toURL(),
     },
 
     imageAltText: 'Anime Pomodoro Timer',
@@ -86,11 +81,12 @@ export const projects: Project[] = [
   {
     id: 'spacetourism',
     title: 'Space Tourism Page',
-    description: '',
+    description:
+      'The Space Tourism Website project showcases my frontend development skills by translating a provided design into a fully functional webpage. This project aimed to create an engaging and responsive platform for users interested in space tourism, allowing them to explore different aspects of space travel and experience optimal viewing across various devices.',
     links: {
       url: 'https://space-tourism-delta-blush.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/space-tourism',
-      imageUrl: spaceTourismUrl,
+      imageUrl: cld.image('portfolio/space-tourism').toURL(),
     },
     imageAltText: 'Space Tourism Page',
     className: 'animate-fade-left',

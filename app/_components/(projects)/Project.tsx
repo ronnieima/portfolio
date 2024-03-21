@@ -13,7 +13,7 @@ type Props = {
 
 export default function Project({ project }: Props) {
   return (
-    <MaxWidthWrapper className="flex flex-col items-center gap-16  lg:flex-row lg:even:flex-row-reverse ">
+    <MaxWidthWrapper className="flex flex-col items-center gap-4 lg:flex-row  lg:gap-16 lg:even:flex-row-reverse ">
       <div className="relative aspect-video h-64">
         <Image
           className="absolute h-full w-full"

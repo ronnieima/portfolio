@@ -2,7 +2,6 @@ import { projects } from '@/config/content';
 import MaxWidthWrapper from '../MaxWidthContainer';
 import SectionHeader from '../SectionHeader';
 import Project from './Project';
-import ProjectsBentoBoxes from './ProjectsBentoBoxes';
 
 function ProjectsPage() {
   return (
@@ -13,7 +12,7 @@ function ProjectsPage() {
           subtitle="Each project is a unique piece of development."
         />
         {/* <ProjectsBentoBoxes /> */}
-        <div className="space-y-32">
+        <div className="space-y-32 py-16">
           {projects.map((project) => (
             <Project key={project.id} project={project} />
           ))}
