@@ -2,6 +2,8 @@ import { projects } from '@/config/content';
 import MaxWidthWrapper from '../MaxWidthContainer';
 import SectionHeader from '../SectionHeader';
 import Project from './Project';
+import { Separator } from '@/components/ui/separator';
+import React from 'react';
 
 function ProjectsPage() {
   return (
@@ -14,7 +16,10 @@ function ProjectsPage() {
         {/* <ProjectsBentoBoxes /> */}
         <div className="space-y-32 py-16">
           {projects.map((project) => (
-            <Project key={project.id} project={project} />
+            <React.Fragment key={project.id}>
+              <Project project={project} />
+              <Separator className="bg-secondary last:hidden" />
+            </React.Fragment>
           ))}
         </div>
       </MaxWidthWrapper>
