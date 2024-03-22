@@ -35,12 +35,10 @@ export default function RootLayout({
       <body
         className={`relative min-h-[100svh] overflow-x-hidden bg-background   bg-white bg-dot-black/[0.2] dark:bg-black  dark:bg-dot-white/[0.2]  ${inter.className}`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <NavBar />
-          {children}
-          <Footer />
-          <ToastContainerWrapper />
-        </ThemeProvider>
+        <NavBar />
+        {children}
+        <Footer />
+        <ToastContainerWrapper />
       </body>
     </html>
   );
