@@ -1,7 +1,7 @@
-import { Project } from '@/app/_components/(projects)/ProjectsBentoBoxes';
 import { cld } from '@/lib/utils';
 
-export const projects: Project[] = [
+export type Project = (typeof projects)[0];
+export const projects = [
   {
     id: 'usafptcalculator',
     title: 'USAF PT Fitness Exam Calculator',

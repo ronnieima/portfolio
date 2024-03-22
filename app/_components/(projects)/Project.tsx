@@ -3,9 +3,9 @@ import { Button } from '@/components/ui/button';
 import { notoSerif } from '@/utils/fonts';
 import Image from 'next/image';
 import React from 'react';
-import { Project as ProjectType } from './ProjectsBentoBoxes';
 import Link from 'next/link';
 import MaxWidthWrapper from '../MaxWidthContainer';
+import { Project as ProjectType } from '@/config/content';
 
 type Props = {
   project: ProjectType;
