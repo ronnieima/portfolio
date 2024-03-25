@@ -11,14 +11,12 @@ function ProjectsPage() {
       <MaxWidthWrapper className="">
         <SectionHeader
           header="Websites I Have Deployed"
-          subtitle="Each project is a unique piece of development."
+          subtitle="View my featured projects."
         />
-        {/* <ProjectsBentoBoxes /> */}
         <div className="space-y-32 py-16">
           {projects.map((project) => (
             <React.Fragment key={project.id}>
               <Project project={project} />
-              <Separator className="bg-secondary last:hidden" />
             </React.Fragment>
           ))}
         </div>

@@ -6,6 +6,7 @@ import React from 'react';
 import Link from 'next/link';
 import MaxWidthWrapper from '../MaxWidthContainer';
 import { Project as ProjectType } from '@/config/content';
+import { Separator } from '@/components/ui/separator';
 
 type Props = {
   project: ProjectType;
@@ -13,16 +14,20 @@ type Props = {
 
 export default function Project({ project }: Props) {
   return (
-    <MaxWidthWrapper className="flex flex-col items-center gap-4 lg:flex-row  lg:gap-16 lg:even:flex-row-reverse ">
-      <div className="relative aspect-video h-64">
+    <MaxWidthWrapper className="flex flex-col items-center gap-4 px-16  lg:flex-row lg:gap-16 lg:even:flex-row-reverse">
+      <Link
+        href={project.links.url}
+        target="_blank"
+        className="relative aspect-video h-32 sm:h-64"
+      >
         <Image
-          className="absolute h-full w-full"
+          className="absolute h-full w-auto"
           src={project.links.imageUrl}
           alt={project.imageAltText}
           fill
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 33vw"
         />
-      </div>
+      </Link>
 
       <div className="flex flex-col gap-2 py-8 text-center sm:text-left  lg:flex lg:flex-col lg:gap-8">
         <h3
@@ -30,7 +35,7 @@ export default function Project({ project }: Props) {
         >
           {project.title}
         </h3>
-        <div className="order-last  flex justify-center gap-4  sm:justify-start">
+        <div className="order-last flex flex-col  justify-center gap-4 sm:flex-row  sm:justify-start">
           <Link href={project.links.url} target="_blank">
             <Button>Visit the website</Button>
           </Link>
