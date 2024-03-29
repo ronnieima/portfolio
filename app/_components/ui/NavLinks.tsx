@@ -1,4 +1,5 @@
 'use client';
+import { SheetClose } from '@/components/ui/sheet';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -12,15 +13,15 @@ const links: LinkType[] = [
   },
   {
     label: 'meet ronnie kaito',
-    href: '/#about-me',
+    href: '#about-me',
   },
   {
     label: 'projects',
-    href: '/#projects',
+    href: '#projects',
   },
   {
     label: 'contact',
-    href: '/#contact',
+    href: '#contact',
   },
 ];
 
@@ -40,9 +41,18 @@ function NavLinks({ mobile }: { mobile?: boolean }) {
           ${mobile ? mobileStyles : desktopStyles}
           `}
         >
-          <Link href={link.href}>
-            <span className="text-xs">0{i + 1}</span> &#47;&#47; {link.label}
-          </Link>
+          {mobile ? (
+            <SheetClose asChild>
+              <Link href={link.href}>
+                <span className="text-xs">0{i + 1}</span> &#47;&#47;{' '}
+                {link.label}
+              </Link>
+            </SheetClose>
+          ) : (
+            <Link href={link.href}>
+              <span className="text-xs">0{i + 1}</span> &#47;&#47; {link.label}
+            </Link>
+          )}
         </li>
       ))}
     </>

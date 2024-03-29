@@ -8,7 +8,7 @@ import { ModeToggle } from './ui/ModeToggle';
 
 function NavBar() {
   return (
-    <nav className="absolute top-0 z-10 w-full">
+    <nav className="absolute top-0 z-10 w-full py-2.5">
       <div className="flex w-full  items-center justify-between gap-10 bg-transparent px-4 ">
         <Link href="/" className="flex items-center gap-4">
           <Crest size={30} />

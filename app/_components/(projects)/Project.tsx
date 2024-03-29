@@ -14,14 +14,14 @@ type Props = {
 
 export default function Project({ project }: Props) {
   return (
-    <MaxWidthWrapper className="flex flex-col items-center gap-4 px-16  lg:flex-row lg:gap-16 lg:even:flex-row-reverse">
+    <MaxWidthWrapper className="flex flex-col items-center gap-4 px-2.5 sm:px-16  lg:flex-row lg:gap-16 lg:even:flex-row-reverse">
       <Link
         href={project.links.url}
         target="_blank"
-        className="relative aspect-video h-32 sm:h-64"
+        className="relative aspect-video h-full w-full "
       >
         <Image
-          className="absolute h-full w-auto"
+          className="absolute h-auto w-full"
           src={project.links.imageUrl}
           alt={project.imageAltText}
           fill
@@ -29,19 +29,23 @@ export default function Project({ project }: Props) {
         />
       </Link>
 
-      <div className="flex flex-col gap-2 py-8 text-center sm:text-left  lg:flex lg:flex-col lg:gap-8">
+      <div className="flex flex-col items-center gap-8 py-8 text-center sm:text-left   lg:gap-8">
         <h3
           className={`${notoSerif.className} text-center  text-2xl font-bold sm:text-left lg:text-5xl`}
         >
           {project.title}
         </h3>
         <div className="order-last flex flex-col  justify-center gap-4 sm:flex-row  sm:justify-start">
-          <Link href={project.links.url} target="_blank">
-            <Button>Visit the website</Button>
-          </Link>
-          <Link href={project.links.githubUrl} target="_blank">
-            <Button>View the GitHub repository</Button>
-          </Link>
+          <Button asChild>
+            <Link href={project.links.url} target="_blank">
+              Visit the website
+            </Link>
+          </Button>
+          <Button asChild>
+            <Link href={project.links.githubUrl} target="_blank">
+              View the GitHub repository
+            </Link>
+          </Button>
         </div>
         {project.technologies && (
           <div className="space-y-2 ">
