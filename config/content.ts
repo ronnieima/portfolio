@@ -24,7 +24,7 @@ export const projects = [
     id: 'audiophile-ecommerce',
     title: 'Audiophile Ecommerce',
     description:
-      'Audiophile is an ecommerce platform I developed for audio enthusiasts. It showcases my skills in web development, database management, and user experience design. With Audiophile, I aimed to create a seamless and intuitive shopping experience for customers interested in high-quality audio equipment.',
+      "This full-stack web application is a challenge from Frontend Mentor, a site that provides professional designs that allows developers to practice building websites in a realistic workflow. In this project, I've implemented an immersive ecommerce platform tailored specifically for audiophiles. With Audiophile, I aimed to create a seamless and intuitive shopping experience for customers interested in high-quality audio equipment.",
     links: {
       url: 'https://audiophile-ecommerce-peach.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/audiophile-ecommerce',
@@ -82,7 +82,7 @@ export const projects = [
     id: 'devlinks',
     title: 'Devlinks - Link Sharing App',
     description:
-      'The Space Tourism Website project showcases my frontend development skills by translating a provided design into a fully functional webpage. This project aimed to create an engaging and responsive platform for users interested in space tourism, allowing them to explore different aspects of space travel and experience optimal viewing across various devices.',
+      "This full-stack web application is a challenge from Frontend Mentor, a site that provides professional designs that allows developers to practice building websites in a realistic workflow. In this project, I've implemented an full stack link-sharing app that allows developers to share links to their socials all in one centralized platform.",
     links: {
       url: 'https://space-tourism-delta-blush.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/link-sharing-app',
@@ -90,7 +90,7 @@ export const projects = [
     },
     imageAltText: 'Devlinks',
     className: 'animate-fade-left',
-    technologies: ['React.js', 'Nextjs', 'TypeScript', 'TailwindCSS'],
+    technologies: ['React.js', 'Next.js', 'TypeScript', 'TailwindCSS'],
   },
 ];
 

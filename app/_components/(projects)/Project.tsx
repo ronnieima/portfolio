@@ -14,7 +14,7 @@ export default function Project({ project }: Props) {
     <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-16 lg:even:flex-row-reverse">
       <Link href={project.links.url} target="_blank" className="min-w-[50%]">
         <Image
-          className="h-full w-full"
+          className="h-full w-full rounded-lg"
           src={project.links.imageUrl}
           alt={project.imageAltText}
           width={0}
