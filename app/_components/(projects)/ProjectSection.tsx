@@ -1,11 +1,10 @@
 import { projects } from '@/config/content';
+import React from 'react';
 import MaxWidthWrapper from '../MaxWidthContainer';
 import SectionHeader from '../SectionHeader';
 import Project from './Project';
-import { Separator } from '@/components/ui/separator';
-import React from 'react';
 
-function ProjectsPage() {
+function ProjectSection() {
   return (
     <section id="projects" className=" relative bg-neutral-200/50 py-16">
       <MaxWidthWrapper className="">
@@ -25,4 +24,4 @@ function ProjectsPage() {
   );
 }
 
-export default ProjectsPage;
+export default ProjectSection;

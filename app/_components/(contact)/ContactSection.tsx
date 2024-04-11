@@ -1,7 +1,7 @@
 import ContactCard from './ContactCard';
 import ContactHeader from './ContactHeader';
 
-function ContactPage() {
+function ContactSection() {
   return (
     <section className="relative pb-32">
       <div className="pointer-events-none absolute inset-0  hidden items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black sm:flex"></div>
@@ -13,4 +13,4 @@ function ContactPage() {
   );
 }
 
-export default ContactPage;
+export default ContactSection;

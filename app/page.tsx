@@ -1,6 +1,6 @@
 import Hero from './_components/Hero';
-import ContactPage from './_components/(contact)/ContactPage';
-import ProjectsPage from './_components/(projects)/ProjectsPage';
+import ContactSection from './_components/(contact)/ContactSection';
+import ProjectSection from './_components/(projects)/ProjectSection';
 import AboutMeSection from './_components/(aboutMe)/AboutMeSection';
 import SkillsSection from './_components/(skills)/SkillsSection';
 
@@ -10,8 +10,8 @@ export default function Home() {
       <Hero />
       <SkillsSection />
       <AboutMeSection />
-      <ProjectsPage />
-      <ContactPage />
+      <ProjectSection />
+      <ContactSection />
     </main>
   );
 }
