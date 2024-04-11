@@ -1,12 +1,9 @@
-import BadgeList from '@/app/[projectId]/BadgeList';
 import { Button } from '@/components/ui/button';
+import { Project as ProjectType } from '@/config/content';
 import { notoSerif } from '@/utils/fonts';
 import Image from 'next/image';
-import React from 'react';
 import Link from 'next/link';
-import MaxWidthWrapper from '../MaxWidthContainer';
-import { Project as ProjectType } from '@/config/content';
-import { Separator } from '@/components/ui/separator';
+import BadgeList from '../ui/BadgeList';
 
 type Props = {
   project: ProjectType;

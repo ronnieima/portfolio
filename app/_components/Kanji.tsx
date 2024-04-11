@@ -2,9 +2,9 @@ import { notoSerifJapanese } from '@/utils/fonts';
 
 function Kanji() {
   return (
-    <div className="col-start-2 col-end-4 row-start-2 flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <div
-        className={`${notoSerifJapanese.className} block  text-center text-[9rem] sm:text-[14rem] md:text-[16rem] lg:text-[21rem]`}
+        className={`${notoSerifJapanese.className} text-center text-[9rem] sm:text-[14rem] md:text-[16rem] lg:text-[21rem]`}
         title="Imagawa in Japanese Kanji"
       >
         今川

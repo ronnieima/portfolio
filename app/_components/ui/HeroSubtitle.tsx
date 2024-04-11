@@ -4,7 +4,7 @@ import { MotionDiv } from '../MotionDiv';
 
 function HeroSubtitle() {
   return (
-    <div className="col-span-2 col-start-3 row-start-3 ">
+    <div>
       <h2 className={`${notoSerif.className} text-right text-5xl`}>
         full stack web
         <br />
