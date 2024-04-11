@@ -30,7 +30,7 @@ export const projects = [
       githubUrl: 'https://github.com/ronnieima/audiophile-ecommerce',
       imageUrl: cld.image('portfolio/audiophile-ecommerce').toURL(),
     },
-    imageAltText: 'My Portfolio Website',
+    imageAltText: 'Audiophile',
     className: 'md:row-span-2 animate-fade-up',
     technologies: [
       'Next.js',
@@ -84,7 +84,7 @@ export const projects = [
     description:
       "This full-stack web application is a challenge from Frontend Mentor, a site that provides professional designs that allows developers to practice building websites in a realistic workflow. In this project, I've implemented an full stack link-sharing app that allows developers to share links to their socials all in one centralized platform.",
     links: {
-      url: 'https://space-tourism-delta-blush.vercel.app/',
+      url: 'https://devlinks-drab.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/link-sharing-app',
       imageUrl: cld.image('portfolio/devlinks').toURL(),
     },
