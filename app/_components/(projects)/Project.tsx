@@ -15,18 +15,15 @@ type Props = {
 export default function Project({ project }: Props) {
   return (
     <MaxWidthWrapper className="flex flex-col items-center gap-4 px-2.5 sm:px-16  lg:flex-row lg:gap-16 lg:even:flex-row-reverse">
-      <Link
-        href={project.links.url}
-        target="_blank"
-        className="relative aspect-video h-full w-full "
-      >
-        <Image
-          className="absolute h-auto w-full"
-          src={project.links.imageUrl}
-          alt={project.imageAltText}
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
+      <Link href={project.links.url} target="_blank" className="h-full w-full ">
+        <div className="relative aspect-video h-auto max-w-[700px]">
+          <Image
+            className=" h-auto w-full"
+            src={project.links.imageUrl}
+            alt={project.imageAltText}
+            fill
+          />
+        </div>
       </Link>
 
       <div className="flex flex-col items-center gap-8 py-8 text-center sm:text-left   lg:gap-8">

@@ -1,10 +1,9 @@
 import Link from 'next/link';
 
-import Crest from './ui/Crest';
 import MobileMenu from './MobileMenu';
+import Crest from './ui/Crest';
 import NavLinks from './ui/NavLinks';
 import SocialLinks from './ui/SocialLinks';
-import { ModeToggle } from './ui/ModeToggle';
 
 function NavBar() {
   return (

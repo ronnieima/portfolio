@@ -79,18 +79,18 @@ export const projects = [
     ],
   },
   {
-    id: 'spacetourism',
-    title: 'Space Tourism Page',
+    id: 'devlinks',
+    title: 'Devlinks - Link Sharing App',
     description:
       'The Space Tourism Website project showcases my frontend development skills by translating a provided design into a fully functional webpage. This project aimed to create an engaging and responsive platform for users interested in space tourism, allowing them to explore different aspects of space travel and experience optimal viewing across various devices.',
     links: {
       url: 'https://space-tourism-delta-blush.vercel.app/',
-      githubUrl: 'https://github.com/ronnieima/space-tourism',
-      imageUrl: cld.image('portfolio/space-tourism').toURL(),
+      githubUrl: 'https://github.com/ronnieima/link-sharing-app',
+      imageUrl: cld.image('portfolio/devlinks').toURL(),
     },
-    imageAltText: 'Space Tourism Page',
+    imageAltText: 'Devlinks',
     className: 'animate-fade-left',
-    technologies: ['React.js', 'Vite', 'Tanstack Router', 'TailwindCSS'],
+    technologies: ['React.js', 'Nextjs', 'TypeScript', 'TailwindCSS'],
   },
 ];
 
