@@ -19,10 +19,6 @@ const links: LinkType[] = [
     label: 'projects',
     href: '#projects',
   },
-  {
-    label: 'contact',
-    href: '#contact',
-  },
 ];
 
 const mobileStyles =

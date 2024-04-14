@@ -1,5 +1,4 @@
 import Hero from './_components/Hero';
-import ContactSection from './_components/(contact)/ContactSection';
 import ProjectSection from './_components/(projects)/ProjectSection';
 import AboutMeSection from './_components/(aboutMe)/AboutMeSection';
 import SkillsSection from './_components/(skills)/SkillsSection';
@@ -11,7 +10,6 @@ export default function Home() {
       <SkillsSection />
       <AboutMeSection />
       <ProjectSection />
-      <ContactSection />
     </main>
   );
 }

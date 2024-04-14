@@ -1,4 +1,3 @@
-import getBase64 from '@/lib/getLocalBase64';
 import Image from 'next/image';
 import React from 'react';
 
