@@ -24,7 +24,7 @@ export default function RootLayout({
         <Script
           async
           src="https://umami.imagawa.dev/script.js"
-          data-website-id="9f81b092-0b19-4727-890e-6ac878685658"
+          data-website-id="6ab564d6-b026-4147-b249-e71a80d87262"
         ></Script>
         <link
           rel="stylesheet"
