@@ -36,4 +36,3 @@ I'm always looking to improve and welcome feedback on my portfolio. If you have 
 This project is open source and available under the [MIT License](LICENSE).
 
 Thank you for visiting my portfolio!
-
