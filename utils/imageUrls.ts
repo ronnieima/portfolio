@@ -1,8 +1,5 @@
-export const headshotUrl =
-  'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265416/portfolio/headshot.jpg';
+import { assetPath } from '@/lib/utils';
 
-export const guamFlagUrl =
-  'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265415/portfolio/Flag_of_Guam.svg';
-
-export const arrowUrl =
-  'https://res.cloudinary.com/dfpbpun9z/image/upload/v1701265414/portfolio/arrow_rzqyl8.svg';
+export const headshotUrl = assetPath('headshot.jpg');
+export const guamFlagUrl = assetPath('guam-flag.svg');
+export const logo = assetPath('imagawa-crest.webp');

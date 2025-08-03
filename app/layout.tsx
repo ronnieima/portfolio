@@ -6,6 +6,7 @@ import Footer from './_components/Footer';
 import NavBar from './_components/NavBar';
 import ToastContainerWrapper from './_components/ToastContainerWrapper';
 import './globals.css';
+import Drift from './_components/Drift';
 
 export const metadata: Metadata = {
   title: 'Ronnie Kaito Imagawa | Portfolio',
@@ -31,6 +32,7 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </head>
+
       <body
         className={`relative bg-background   bg-white bg-dot-black/[0.2] ${inter.className}`}
       >
@@ -38,6 +40,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <ToastContainerWrapper />
+        <Drift />
       </body>
     </html>
   );

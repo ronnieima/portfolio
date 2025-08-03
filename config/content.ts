@@ -1,4 +1,4 @@
-import { cld } from '@/lib/utils';
+import { assetPath } from '@/lib/utils';
 
 export type Project = (typeof projects)[0];
 export const projects = [
@@ -12,7 +12,7 @@ export const projects = [
     links: {
       url: 'https://www.usafptcalculator.com',
       githubUrl: 'https://github.com/ronnieima/usaf-pt-calculator',
-      imageUrl: cld.image('portfolio/usafptcalculator_dd3hnp').toURL(),
+      imageUrl: assetPath('projects/usafptcalculator.png'),
     },
 
     imageAltText: 'My Portfolio Website',
@@ -28,7 +28,7 @@ export const projects = [
     links: {
       url: 'https://audiophile-ecommerce-peach.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/audiophile-ecommerce',
-      imageUrl: cld.image('portfolio/audiophile-ecommerce').toURL(),
+      imageUrl: assetPath('projects/audiophile.png'),
     },
     imageAltText: 'Audiophile',
     className: 'md:row-span-2 animate-fade-up',
@@ -49,7 +49,7 @@ export const projects = [
     links: {
       url: 'https://www.selfieboothguam.com/',
       githubUrl: 'https://github.com/ronnieima/selfieboothguam',
-      imageUrl: cld.image('portfolio/selfiebooth').toURL(),
+      imageUrl: assetPath('projects/selfieboothguam.png'),
     },
     imageAltText: 'selfieboothguam',
     className: 'md:col-span-2 animate-fade-left',
@@ -64,7 +64,7 @@ export const projects = [
     links: {
       url: 'https://www.animepomodoro.com/',
       githubUrl: 'https://github.com/ronnieima/animepomodoro',
-      imageUrl: cld.image('portfolio/animepomodoro').toURL(),
+      imageUrl: assetPath('projects/animepomodoro.png'),
     },
 
     imageAltText: 'Anime Pomodoro Timer',
@@ -86,7 +86,7 @@ export const projects = [
     links: {
       url: 'https://devlinks-drab.vercel.app/',
       githubUrl: 'https://github.com/ronnieima/link-sharing-app',
-      imageUrl: cld.image('portfolio/devlinks').toURL(),
+      imageUrl: assetPath('projects/devlinks.png'),
     },
     imageAltText: 'Devlinks',
     className: 'animate-fade-left',
@@ -97,6 +97,7 @@ export const projects = [
 export const icons = {
   front_end: [
     { icon: 'devicon-react-original colored', label: 'React' },
+    { icon: 'devicon-vuejs-plain-wordmark colored', label: 'Vue.js' },
     {
       icon: 'devicon-javascript-plain colored',
       label: 'JavaScript',
@@ -114,6 +115,10 @@ export const icons = {
     },
   ],
   back_end: [
+    {
+      icon: 'devicon-java-plain-wordmark colored',
+      label: 'Java',
+    },
     {
       icon: 'devicon-nodejs-plain-wordmark colored',
       label: 'Node.js',

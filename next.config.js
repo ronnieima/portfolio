@@ -1,15 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = {
+const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        pathname: '/dfpbpun9z/**',
+        hostname: 'assets.imagawa.dev',
+        pathname: '/**',
       },
     ],
   },
 };
-//
+
+module.exports = nextConfig;
