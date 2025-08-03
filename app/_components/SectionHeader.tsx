@@ -21,7 +21,7 @@ export default function SectionHeader({
       className={cn('flex flex-col items-start justify-start gap-4', className)}
     >
       <h2
-        className={`${notoSerif.className} self-start text-left text-2xl font-bold text-secondary`}
+        className={`${notoSerif.className} self-start text-left text-lg font-bold text-secondary`}
       >
         {header}
       </h2>

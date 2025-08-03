@@ -12,7 +12,8 @@ function BadgeList({ technologies }: BadgeListProps) {
       {technologies.map((technology) => {
         return (
           <Badge
-            className="h-8 text-black hover:bg-yellow-200/90"
+            className="transition' -all h-8 text-white hover:bg-yellow-200/90
+            hover:text-black"
             variant={'secondary'}
             key={technology}
           >

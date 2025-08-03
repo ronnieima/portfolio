@@ -9,17 +9,17 @@ function AboutMeSection() {
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-8  lg:flex-row">
         <Headshot />
 
-        <div className="flex h-full flex-col items-start justify-start gap-6">
+        <div className="flex h-full max-w-[60ch] flex-col items-start justify-start gap-8 p-4">
           <SectionHeader
             header="Who is Ronnie Kaito Imagawa?"
             subtitle="A dedicated full stack developer who turns ideas into digitized
               realities."
           />
-          <p className="prose mb-16 text-lg text-muted-foreground sm:mb-0 sm:text-left sm:text-lg lg:pr-48">
-            I am an active duty service member from Dededo, Guam who loves
-            transforming concepts into captivating digital experiences. Coding
-            has developed into a fun hobby of mine, and I wish to transition
-            this passion into a career.
+          <p className="prose rounded-3xl border bg-white px-7 py-5 text-lg leading-relaxed text-foreground shadow-sm sm:text-left sm:text-lg">
+            I&apos;m a software developer and U.S. Air Force veteran passionate
+            about building engaging digital experiences. I bring a strong
+            foundation in software development, problem-solving, and the same
+            discipline I learned in the military to every project.
           </p>
         </div>
       </MaxWidthWrapper>

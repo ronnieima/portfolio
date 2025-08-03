@@ -12,14 +12,6 @@ async function Headshot() {
         priority={true}
         className=" mx-auto w-3/5 rounded-3xl lg:w-4/5"
       />
-
-      <Image
-        src={guamFlagUrl}
-        alt="Flag of Guam"
-        width={100}
-        height={50}
-        className="absolute -bottom-2 right-14 w-1/5 lg:bottom-0 lg:right-0 lg:w-2/5"
-      />
     </div>
   );
 }
