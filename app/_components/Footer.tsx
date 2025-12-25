@@ -4,10 +4,10 @@ import SocialLinks from './ui/SocialLinks';
 
 function Footer() {
   return (
-    <footer className=" absolute bottom-0 w-full">
+    <footer className="absolute bottom-0 flex w-full flex-col gap-4">
       <SocialLinks />
-      <div className="mx-auto max-w-screen-lg animate-fade-up grid-cols-8 px-4 pb-1 text-center  animate-duration-[2000ms]">
-        <p className="text-xs text-muted-foreground">
+      <div className="animate-fade-up animate-duration-[2000ms] mx-auto max-w-screen-lg grid-cols-8 px-4 pb-1 text-center">
+        <p className="text-muted-foreground text-xs">
           Coded in{' '}
           <HoverableLink url="https://code.visualstudio.com/">
             Visual Studio Code
@@ -46,7 +46,7 @@ function HoverableLink({ children, url }: HoverableLinkProps) {
     <Link
       href={url}
       target="_blank"
-      className=" italic text-primary hover:opacity-80"
+      className="text-primary italic hover:opacity-80"
     >
       {children}
     </Link>
