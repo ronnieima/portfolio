@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import React from 'react';
 import { SocialIcon } from 'react-social-icons/component';
 import 'react-social-icons/github';
 import 'react-social-icons/linkedin';
@@ -26,15 +25,19 @@ const socials: SocialType[] = [
 ];
 function SocialLinks({ className }: { className?: string }) {
   return (
-    <ul className={cn('flex list-none items-center justify-center', className)}>
+    <ul
+      className={cn(
+        'flex list-none items-center justify-center gap-4',
+        className,
+      )}
+    >
       {socials.map((social) => (
         <li key={social.url}>
           <Link href={social.url} target="_blank">
             <SocialIcon
               as="div"
               network={social.network}
-              bgColor="transparent"
-              className="invert transition-all hover:scale-110 dark:invert-0"
+              className="transition-all hover:scale-110"
             />
           </Link>
         </li>
