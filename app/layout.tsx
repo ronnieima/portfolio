@@ -20,12 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth ">
+    <html lang="en" className="scroll-smooth">
       <head>
         <Script
-          async
-          src="https://umami.imagawa.dev/script.js"
-          data-website-id="6ab564d6-b026-4147-b249-e71a80d87262"
+          defer
+          src="https://analytics.imagawa.dev/script.js"
+          data-website-id="da7daf3d-ce65-4e31-b549-21a8ea0e4cd9"
         ></Script>
         <link
           rel="stylesheet"
@@ -34,7 +34,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`relative bg-background   bg-white bg-dot-black/[0.2] ${inter.className}`}
+        className={`bg-background bg-dot-black/[0.2] relative bg-white ${inter.className}`}
       >
         <NavBar />
         {children}
