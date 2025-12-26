@@ -25,8 +25,8 @@ export default function RootLayout({
         <Script
           defer
           src="https://analytics.imagawa.dev/script.js"
-          data-website-id="da7daf3d-ce65-4e31-b549-21a8ea0e4cd9"
-        ></Script>
+          data-website-id="7079c1b2-3920-4ef2-a215-f4bfdbfda90e"
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
